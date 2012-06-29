@@ -1,0 +1,81 @@
+{
+    "id": "ExtBox1-ext-gen3594",
+    "type": "treepanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "frame": true,
+        "height": 250,
+        "width": 400,
+        "title": "Check Tree",
+        "store": "CheckNodes",
+        "rootVisible": false,
+        "useArrows": true,
+        "designer|userClassName": "CheckedNodeTree",
+        "designer|userAlias": "checkedtree"
+    },
+    "customConfigs": [],
+    "designerId": "24dd6e71-b844-4e96-9e6b-0297caea7bf6",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen3606",
+            "type": "treeview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyTreeView"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen4057",
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyToolbar",
+                "dock": "top"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen4270",
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Get checked nodes",
+                        "designer|userClassName": "MyButton",
+                        "layout|flex": null,
+                        "action": "getCheckedNodes"
+                    },
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

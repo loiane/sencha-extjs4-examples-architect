@@ -1,0 +1,36 @@
+{
+    "id": "ExtBox1-ext-gen2584",
+    "type": "treestore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "storeId": "CheckNodes",
+        "model": "CheckNode",
+        "designer|userClassName": "CheckNodes"
+    },
+    "customConfigs": [],
+    "designerId": "b621a954-9932-48b1-a701-bfcd96077df0",
+    "$viewOrder": 0,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen2591",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/check-nodes.json",
+                "designer|userClassName": "MyAjaxProxy"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

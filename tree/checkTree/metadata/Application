@@ -1,0 +1,30 @@
+{
+    "id": "ExtBox1-ext-gen2510",
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "CheckNode"
+        ],
+        "stores": [
+            "CheckNodes"
+        ],
+        "views": [
+            "CheckedNodeTree"
+        ],
+        "autoCreateViewport": true,
+        "name": "MyApp",
+        "controllers": [
+            "CheckNode"
+        ]
+    },
+    "customConfigs": [],
+    "designerId": "application",
+    "$viewOrder": 0,
+    "iconCls": "icon-application",
+    "expanded": true
+}
