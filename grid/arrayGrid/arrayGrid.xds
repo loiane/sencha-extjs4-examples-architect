@@ -1,0 +1,77 @@
+{
+    "name": "arrayGrid",
+    "settings": {
+        "urlPrefix": "http://loianeg.local/sencha-extjs4-examples-architect/grid/arrayGrid/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "exportPath": "",
+        "extPath": "http://dev.sencha.com/deploy/ext-4.1.0-gpl/",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "lineEnding": "LF",
+        "instantiateStore": true,
+        "genTimestamps": false,
+        "saveOnDeploy": false,
+        "appName": "MyApp",
+        "mapsAPI": "http://maps.google.com/maps/api/js?sensor=true"
+    },
+    "xdsVersion": "2.0.0",
+    "xdsBuild": "442",
+    "framework": "ext40",
+    "topInstanceFileMap": {
+        "d4f6d776-063e-4476-ab61-100e99bdc8d1": {
+            "paths": [
+                "metadata/view/CompanyGrid",
+                "app/view/override/CompanyGrid.js",
+                "app/view/CompanyGrid.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "CompanyGrid"
+        },
+        "697802eb-b071-495e-ac8e-be39ca45ea9d": {
+            "paths": [
+                "metadata/store/Companies",
+                "app/store/override/Companies.js",
+                "app/store/Companies.js"
+            ],
+            "className": "Companies"
+        },
+        "e5751a30-30a3-4ec8-ba73-569935187894": {
+            "paths": [
+                "metadata/model/Company",
+                "app/model/override/Company.js",
+                "app/model/Company.js"
+            ],
+            "className": "Company"
+        },
+        "964a9437-49d8-4a24-a393-75303a11f142": {
+            "paths": [
+                "metadata/controller/Company",
+                "app/controller/override/Company.js",
+                "app/controller/Company.js"
+            ],
+            "className": "Company"
+        },
+        "da4a6cb5-2e1b-41da-9e8b-0d6c5e62d0b1": {
+            "paths": [
+                "metadata/view/AppViewport",
+                "app/view/override/AppViewport.js",
+                "app/view/AppViewport.js"
+            ],
+            "className": "AppViewport"
+        },
+        "248eb492-f9a1-43e5-9ebc-96f55b11f018": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        }
+    },
+    "expandedState": {
+        "data": false,
+        "model": false,
+        "component": true,
+        "controller": true,
+        "resource": true
+    }
+}

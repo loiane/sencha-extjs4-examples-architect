@@ -1,0 +1,31 @@
+{
+    "id": "ExtBox1-ext-gen2516",
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Company"
+        ],
+        "stores": [
+            "Companies"
+        ],
+        "views": [
+            "CompanyGrid",
+            "AppViewport"
+        ],
+        "autoCreateViewport": true,
+        "name": "Sencha",
+        "controllers": [
+            "Company"
+        ]
+    },
+    "customConfigs": [],
+    "designerId": "application",
+    "$viewOrder": 0,
+    "iconCls": "icon-application",
+    "expanded": true
+}

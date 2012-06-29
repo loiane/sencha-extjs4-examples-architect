@@ -1,0 +1,84 @@
+{
+    "id": "ExtBox1-ext-gen13471",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Company"
+        ],
+        "stores": [
+            "Companies"
+        ],
+        "views": [
+            "CompanyGrid"
+        ],
+        "designer|userClassName": "Company"
+    },
+    "customConfigs": [],
+    "designerId": "964a9437-49d8-4a24-a393-75303a11f142",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen13773",
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    ""
+                ],
+                "designer|userClassName": "init"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-basic-function",
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen17553",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "handleActionColumn",
+                "designer|params": [
+                    "column",
+                    "action",
+                    "view",
+                    "rowIndex",
+                    "colIndex",
+                    "item",
+                    "e"
+                ],
+                "implHandler": [
+                    "var rec = view.getRecords(view.getNodes())[rowIndex];",
+                    "if (action == 'sell'){",
+                    "    Ext.Msg.alert('', \"Sell \" + rec.get('company'));",
+                    "} else {",
+                    "    Ext.Msg.alert('', (rec.get('change') < 0 ? \"Hold \" : \"Buy \") + rec.get('company'));",
+                    "}    "
+                ],
+                "name": "itemclick",
+                "scope": "me",
+                "designer|controlQuery": "companygrid actioncolumn",
+                "designer|userClassName": "handleActionColumn"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}
