@@ -1,0 +1,84 @@
+{
+    "name": "xml_grid",
+    "settings": {
+        "urlPrefix": "http://loianeg.local/architect/xml_grid/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 613,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000497,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "5c078741-2383-4e1e-bc7e-479367c04e8e": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "8650dc01-74a0-4fa6-89fb-b5afebd68071": {
+            "paths": [
+                "metadata/store/Books",
+                "app/store/override/Books.js",
+                "app/store/Books.js"
+            ],
+            "className": "Books"
+        },
+        "db144091-caca-4c32-baaf-9bce74a97272": {
+            "paths": [
+                "metadata/model/Book",
+                "app/model/override/Book.js",
+                "app/model/Book.js"
+            ],
+            "className": "Book"
+        },
+        "4304ee78-c97f-4108-b53d-d986c5aaa9e2": {
+            "paths": [
+                "metadata/view/BooksGrid",
+                "app/view/override/BooksGrid.js",
+                "app/view/BooksGrid.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "BooksGrid"
+        },
+        "d689b59a-e902-4302-b968-194be8357045": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "5124d577-aa1a-49ea-94b1-f5ed003ad07b": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "4304ee78-c97f-4108-b53d-d986c5aaa9e2"
+        ],
+        "store": [
+            "8650dc01-74a0-4fa6-89fb-b5afebd68071"
+        ],
+        "controller": [
+            "5124d577-aa1a-49ea-94b1-f5ed003ad07b"
+        ],
+        "model": [
+            "db144091-caca-4c32-baaf-9bce74a97272"
+        ],
+        "resource": [
+            "5c078741-2383-4e1e-bc7e-479367c04e8e",
+            "d689b59a-e902-4302-b968-194be8357045"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

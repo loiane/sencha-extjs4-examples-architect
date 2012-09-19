@@ -1,0 +1,63 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "models": [
+            "Book"
+        ],
+        "stores": [
+            "Books"
+        ],
+        "views": [
+            "BooksGrid"
+        ]
+    },
+    "id": "ExtBox1-ext-gen8762",
+    "designerId": "5124d577-aa1a-49ea-94b1-f5ed003ad07b",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "var body = Ext.getBody();",
+                    "var helper = new Ext.dom.Helper();",
+                    "",
+                    "var html = \"<h1>XML Grid Example</h1>\";",
+                    "helper.append(body,html);",
+                    "",
+                    "html = \"<p>This example shows how to load a grid with XML data.</p>\";",
+                    "helper.append(body,html);",
+                    "",
+                    "html = \" <p>Note that the js is not minified so it is readable. See <a href='app.js'>app.js</a>.</p>\";",
+                    "helper.append(body,html);",
+                    "",
+                    "html = \"<p>The data in the grid is loaded from <a href='sheldon.xml'>sheldon.xml</a>, which is directly from an Amazon.com search.</p>\";",
+                    "helper.append(body,html);",
+                    "",
+                    "html = \"<div id='example-grid'></div>\";",
+                    "helper.append(body,html);",
+                    "",
+                    "Ext.create('Sencha.view.BooksGrid',{",
+                    "    renderTo: 'example-grid'",
+                    "});"
+                ]
+            },
+            "designerId": "f3cffbf8-b4b1-488f-8a7f-cb1ac9b362cd"
+        }
+    ]
+}

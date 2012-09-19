@@ -1,0 +1,55 @@
+{
+    "type": "xmlstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Books",
+        "autoLoad": true,
+        "storeId": "BooksStore",
+        "model": "Book"
+    },
+    "id": "ExtBox1-ext-gen3472",
+    "designerId": "8650dc01-74a0-4fa6-89fb-b5afebd68071",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "url": "sheldon.xml"
+            },
+            "designerId": "6a9a083f-31d9-4e68-8dfc-351c67117f46",
+            "cn": [
+                {
+                    "type": "xmlreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "totalRecords": "@total",
+                        "designer|userClassName": "MyXmlReader",
+                        "idProperty": "ASIN",
+                        "record": "Item"
+                    },
+                    "designerId": "46492a21-bd31-4bfd-872e-1d8525ea3583",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "totalRecords",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

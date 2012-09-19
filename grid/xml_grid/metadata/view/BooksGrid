@@ -1,0 +1,88 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "renderTo": null,
+        "designer|userClassName": "BooksGrid",
+        "designer|initialView": true,
+        "height": 200,
+        "width": 540,
+        "title": "Xml Grid",
+        "store": "Books"
+    },
+    "id": "ExtBox1-ext-gen4486",
+    "designerId": "4304ee78-c97f-4108-b53d-d986c5aaa9e2",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "renderTo",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn",
+                "dataIndex": "Author",
+                "flex": 1,
+                "text": "Author"
+            },
+            "designerId": "6e7c6372-4ee7-492c-957c-f011e448d513"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn1",
+                "width": 180,
+                "dataIndex": "Title",
+                "text": "Title"
+            },
+            "designerId": "b4bd5949-b279-4489-af69-311260d90dfd"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn2",
+                "width": 115,
+                "dataIndex": "Manufacturer",
+                "text": "Manufacturer"
+            },
+            "designerId": "b7d71b82-b025-490d-bd73-31a176be1912"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn3",
+                "width": 100,
+                "dataIndex": "ProductGroup",
+                "text": "Product Group"
+            },
+            "designerId": "40372d5e-1b25-4619-8b1a-8b097b348ac4"
+        }
+    ]
+}

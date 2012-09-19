@@ -1,0 +1,68 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Book"
+    },
+    "id": "ExtBox1-ext-gen2553",
+    "designerId": "db144091-caca-4c32-baaf-9bce74a97272",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field",
+                "name": "Author",
+                "mapping": "ItemAttributes > Author"
+            },
+            "designerId": "6fe0c230-cd27-499a-a116-780efafba38c"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field1",
+                "name": "Title"
+            },
+            "designerId": "a2b1af69-b558-4294-824d-bde6e9816ec9"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "Manufacturer"
+            },
+            "designerId": "032fd8ca-4211-40d2-81cd-eb3d26b054b7"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field3",
+                "name": "ProductGroup"
+            },
+            "designerId": "2f4365f5-1d4a-46d0-8eb2-02f81dfa4113"
+        }
+    ]
+}
