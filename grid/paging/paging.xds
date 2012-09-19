@@ -1,0 +1,91 @@
+{
+    "name": "paging",
+    "settings": {
+        "urlPrefix": "http://loianeg.local/sencha-extjs4-examples-architect/grid/paging/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 613,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000497,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "468fee89-c3ee-4767-8423-5c9bc80a5df5": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "394ea1ff-724c-447d-80de-386806c54052": {
+            "paths": [
+                "metadata/model/ForumThread",
+                "app/model/override/ForumThread.js",
+                "app/model/ForumThread.js"
+            ],
+            "className": "ForumThread"
+        },
+        "46a21013-c33d-4f37-97fd-6bd5bec22a94": {
+            "paths": [
+                "metadata/store/ForumThreads",
+                "app/store/override/ForumThreads.js",
+                "app/store/ForumThreads.js"
+            ],
+            "className": "ForumThreads"
+        },
+        "60f2f8e4-7812-4d44-9e9a-bb005fd93949": {
+            "paths": [
+                "metadata/view/ForumThreadGrid",
+                "app/view/override/ForumThreadGrid.js",
+                "app/view/ForumThreadGrid.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "ForumThreadGrid"
+        },
+        "bf8ad387-ceda-405d-932e-bffa6b5eaf65": {
+            "paths": [
+                "metadata/controller/ForumThread",
+                "app/controller/override/ForumThread.js",
+                "app/controller/ForumThread.js"
+            ],
+            "className": "ForumThread"
+        },
+        "ff5ea4ca-7ab9-4367-842a-804d0def6e6e": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "ccc0d601-6b58-42fb-bfdc-ab2e792d4b71": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "60f2f8e4-7812-4d44-9e9a-bb005fd93949"
+        ],
+        "store": [
+            "46a21013-c33d-4f37-97fd-6bd5bec22a94"
+        ],
+        "controller": [
+            "bf8ad387-ceda-405d-932e-bffa6b5eaf65"
+        ],
+        "model": [
+            "394ea1ff-724c-447d-80de-386806c54052"
+        ],
+        "resource": [
+            "468fee89-c3ee-4767-8423-5c9bc80a5df5",
+            "ff5ea4ca-7ab9-4367-842a-804d0def6e6e",
+            "ccc0d601-6b58-42fb-bfdc-ab2e792d4b71"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ForumThread",
+        "models": [
+            "ForumThread"
+        ],
+        "stores": [
+            "ForumThreads"
+        ],
+        "views": [
+            "ForumThreadGrid"
+        ]
+    },
+    "id": "ExtBox1-ext-gen12985",
+    "designerId": "bf8ad387-ceda-405d-932e-bffa6b5eaf65",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "this.getForumThreadsStore().loadPage(1);"
+                ]
+            },
+            "designerId": "a39f43d0-9bce-4738-b646-8c0e972f1bc9"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonToggle",
+                "fn": "onButtonToggle",
+                "implHandler": [
+                    "var preview = this.getGridView().getPlugin('preview');",
+                    "preview.toggleExpanded(pressed);"
+                ],
+                "name": "toggle",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "button[action=handlePreview]"
+            },
+            "designerId": "02c2fe22-566c-4870-9083-9ad919cb67e1"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "gridView",
+                "ref": "gridView",
+                "selector": "forumthreadgrid dataview",
+                "xtype": "dataview"
+            },
+            "designerId": "f8805dd0-42be-4554-a9b0-e838226519b7"
+        }
+    ]
+}

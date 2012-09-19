@@ -1,0 +1,250 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "loadMask": true,
+        "designer|userClassName": "ForumThreadGrid",
+        "designer|userAlias": "forumthreadgrid",
+        "requires": [
+            "Ext.ux.PreviewPlugin"
+        ],
+        "designer|initialView": true,
+        "height": 500,
+        "width": 700,
+        "title": "ExtJS.com - Browse Forums",
+        "disableSelection": true,
+        "store": "ForumThreads"
+    },
+    "configAlternates": {
+        "loadMask": "boolean"
+    },
+    "id": "ExtBox1-ext-gen5384",
+    "designerId": "60f2f8e4-7812-4d44-9e9a-bb005fd93949",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "loadMask",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn",
+                "id": "topic",
+                "sortable": false,
+                "dataIndex": "title",
+                "flex": 1,
+                "text": "Topic"
+            },
+            "designerId": "f8d20737-7925-41ae-a723-4be14e8c21c5",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "renderer",
+                        "fn": "renderer",
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "implHandler": [
+                            "return Ext.String.format(",
+                            "            '<b><a href=\"http://sencha.com/forum/showthread.php?t={2}\" target=\"_blank\">{0}</a></b><a href=\"http://sencha.com/forum/forumdisplay.php?f={3}\" target=\"_blank\">{1} Forum</a>',",
+                            "            value,",
+                            "            record.data.forumtitle,",
+                            "            record.getId(),",
+                            "            record.data.forumid",
+                            "        );"
+                        ]
+                    },
+                    "designerId": "4120a717-5565-4078-a004-048794e2fe49"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn1",
+                "hidden": true,
+                "width": 100,
+                "dataIndex": "username",
+                "text": "Author"
+            },
+            "designerId": "e3532afc-1c45-4313-a225-12b928224fd0"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn2",
+                "width": 70,
+                "dataIndex": "replycount",
+                "text": "Replies"
+            },
+            "designerId": "0276d58c-a961-4b6a-8033-4fc005291ce7"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn3",
+                "id": "last",
+                "width": 150,
+                "dataIndex": "lastpost",
+                "text": "Last Post"
+            },
+            "designerId": "a3f6fb33-dc70-4104-be24-c04d40c3d3a8",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "renderer",
+                        "fn": "renderer",
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "implHandler": [
+                            "return Ext.String.format('{0}<br/>by {1}', Ext.Date.dateFormat(value, 'M j, Y, g:i a'), record.get('lastposter'));"
+                        ]
+                    },
+                    "designerId": "b54dab88-be1b-451d-a671-6e77352aabd6"
+                }
+            ]
+        },
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "plugins": [
+                    "[{",
+                    "    ptype: 'preview',",
+                    "    bodyField: 'excerpt',",
+                    "    expanded: true,",
+                    "    pluginId: 'preview'",
+                    "}]"
+                ],
+                "designer|userClassName": "MyGridView",
+                "id": null,
+                "trackOver": false,
+                "stripeRows": false
+            },
+            "configAlternates": {
+                "plugins": "object"
+            },
+            "designerId": "856242c5-2f60-402d-b1df-1f7b9328c92a",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "plugins",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "pagingtoolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "designer|userClassName": "MyPagingToolbar",
+                "width": null,
+                "displayInfo": true,
+                "displayMsg": "Displaying topics {0} - {1} of {2}",
+                "emptyMsg": "No topics to display",
+                "store": "ForumThreads"
+            },
+            "designerId": "2f875e3f-91e0-4b25-856d-ebe66649291d",
+            "cn": [
+                {
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MySeparator"
+                    },
+                    "designerId": "fb9bb17e-b38f-4717-a987-c459909ca19a"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "action": "handlePreview",
+                        "designer|userClassName": "MyButton",
+                        "enableToggle": true,
+                        "pressed": true,
+                        "text": "Show Preview"
+                    },
+                    "designerId": "8e87f394-ea08-4aba-8446-d00b9130de4d",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

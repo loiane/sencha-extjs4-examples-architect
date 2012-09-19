@@ -1,0 +1,61 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ForumThreads",
+        "storeId": "ForumThreadsStore",
+        "model": "ForumThread"
+    },
+    "id": "ExtBox1-ext-gen4194",
+    "designerId": "46a21013-c33d-4f37-97fd-6bd5bec22a94",
+    "cn": [
+        {
+            "type": "jsonpproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy",
+                "simpleSortMode": true,
+                "url": "http://www.sencha.com/forum/topics-browse-remote.php"
+            },
+            "designerId": "1fb009f0-21dc-4aae-91dd-cd5041b4e757",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader",
+                        "root": "topics",
+                        "totalProperty": "totalCount"
+                    },
+                    "designerId": "da80f4ec-c693-4399-a05c-9686023c22c1"
+                }
+            ]
+        },
+        {
+            "type": "sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MySorter",
+                "direction": "DESC",
+                "property": "lastpost"
+            },
+            "designerId": "bfdbf105-3cd1-44ea-9ccc-69460c97719a"
+        }
+    ]
+}

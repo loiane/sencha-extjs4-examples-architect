@@ -1,0 +1,37 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoCreateViewport": true,
+        "name": "Sencha",
+        "controllers": [
+            "ForumThread"
+        ]
+    },
+    "id": "ExtBox1-ext-gen1741",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "Loader1",
+                "enabled": true,
+                "paths": [
+                    "{\"Ext\":\".\",",
+                    " \"Ext.ux\": \"../../ux\"",
+                    "}"
+                ]
+            },
+            "designerId": "765cee9d-aab5-49bf-afb4-098843733ae5"
+        }
+    ]
+}

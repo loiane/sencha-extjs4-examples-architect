@@ -1,0 +1,137 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ForumThread",
+        "idProperty": "threadid"
+    },
+    "id": "ExtBox1-ext-gen2184",
+    "designerId": "394ea1ff-724c-447d-80de-386806c54052",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field",
+                "name": "title"
+            },
+            "designerId": "5680074a-e6cf-4809-8cec-e6389da8ea8b"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field1",
+                "name": "forumtitle"
+            },
+            "designerId": "a26c3da5-e312-4cef-80da-dc23a64d6dc9"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "forumid"
+            },
+            "designerId": "feb01afd-55b0-4913-a743-70879e64b1f5"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field3",
+                "name": "username"
+            },
+            "designerId": "187a4b03-83e0-461e-a19d-2f23ab91f0ac"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field4",
+                "name": "replycount",
+                "type": "int"
+            },
+            "designerId": "9cf3c6b7-9eca-4f49-8c77-3666f380fe35"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field5",
+                "name": "lastpost",
+                "dateFormat": "timestamp",
+                "mapping": "lastpost",
+                "type": "date"
+            },
+            "designerId": "a737fade-c8cc-4a43-8b15-1f07ca7c07db"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field6",
+                "name": "lastposter"
+            },
+            "designerId": "f1b647e1-f667-4ea8-81b5-d0a3ab13c1ae"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field7",
+                "name": "excerpt"
+            },
+            "designerId": "a317dd06-de2a-45d5-a582-0d51a733caf6"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field8",
+                "name": "threadid"
+            },
+            "designerId": "6bb80b73-fff3-408a-8076-01fd3a345dfe"
+        }
+    ]
+}
