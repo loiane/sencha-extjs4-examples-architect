@@ -1,0 +1,101 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Post"
+    },
+    "id": "ExtBox1-ext-gen2993",
+    "designerId": "75bb7bdd-0956-490c-b006-a6d4672babac",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field",
+                "name": "id",
+                "mapping": "post_id"
+            },
+            "designerId": "981da72b-424d-4aa1-b097-08a6a8e287e4"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field1",
+                "name": "title",
+                "mapping": "topic_title"
+            },
+            "designerId": "bc42bcee-3074-4051-9846-55b9e93e9f78"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "topicId",
+                "mapping": "topic_id"
+            },
+            "designerId": "b7e3fe34-9153-4149-9313-a0d2b9aa5887"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field3",
+                "name": "author",
+                "mapping": "author"
+            },
+            "designerId": "0b51e5c6-8c7b-492a-85d7-9963153ba796"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field4",
+                "name": "lastPost",
+                "dateFormat": "timestamp",
+                "mapping": "post_time",
+                "type": "date"
+            },
+            "designerId": "2adf305d-7b4d-4782-818c-8db0b368fefa"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field5",
+                "name": "excerpt",
+                "mapping": "post_text"
+            },
+            "designerId": "bac68e12-db30-4edd-9126-dc1c1842f55a"
+        }
+    ]
+}

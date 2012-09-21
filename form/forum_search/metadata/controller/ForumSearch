@@ -1,0 +1,83 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ForumSearch",
+        "models": [
+            "Post"
+        ],
+        "stores": [
+            "Posts"
+        ],
+        "views": [
+            "ForumSearch"
+        ]
+    },
+    "id": "ExtBox1-ext-gen2258",
+    "designerId": "33f5436b-6f80-428e-89b6-d86a529d9022",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onComboboxSelect",
+                "fn": "onComboboxSelect",
+                "implHandler": [
+                    "var post = records[0];",
+                    "if (post) {",
+                    "    window.location =",
+                    "        Ext.String.format('http://www.sencha.com/forum/showthread.php?t={0}&p={1}', post.get('topicId'), post.get('id'));",
+                    "}"
+                ],
+                "name": "select",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.ComboBox",
+                "designer|controlQuery": "forumsearch combo[name=comboSearch]"
+            },
+            "designerId": "63ccda6c-4bfe-4821-bfa5-36d4f9f4fde4"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "var body = Ext.getBody();",
+                    "var helper = new Ext.dom.Helper();",
+                    "",
+                    "var html = \"<h1>Combo with Templates and Ajax</h1>\";",
+                    "helper.append(body,html);",
+                    "",
+                    "html = \"<p>This is a more advanced example that shows how you can combine \";",
+                    "html +=\"<!--paging, -->Ext.Template and a remote data store to create a \";",
+                    "html +=\"'live search' feature. Try searching for terms like 'form', or 'grid'.\";",
+                    "helper.append(body,html);",
+                    "",
+                    "html = \"<p>The js is not minified so it is readable. See <a href='app.js'>app.js</a>.</p>\";",
+                    "helper.append(body,html);",
+                    "",
+                    "Ext.create('Sencha.view.ForumSearch',{",
+                    "    renderTo: Ext.getBody()",
+                    "});"
+                ]
+            },
+            "designerId": "7b19374c-9009-4b39-b56d-26f465884d0a"
+        }
+    ]
+}

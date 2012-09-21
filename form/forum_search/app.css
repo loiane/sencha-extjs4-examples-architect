@@ -1,0 +1,24 @@
+.search-item {
+    padding: 5px 10px;
+    white-space: normal;
+    color: #555;
+}
+
+.search-item h3 {
+    display: block;
+    font: inherit;
+    font-weight: bold;
+    color: #222;
+}
+
+.search-item h3 span {
+    float: right;
+    font-weight: normal;
+    margin:0 0 5px 5px;
+    width: 100px;
+    clear: none;
+}
+
+html, body {
+    border: 0;
+}

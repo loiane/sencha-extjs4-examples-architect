@@ -1,0 +1,85 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ForumSearch",
+        "designer|userAlias": "forumsearch",
+        "designer|initialView": true,
+        "height": null,
+        "width": 600,
+        "layout": "anchor",
+        "bodyPadding": 10,
+        "title": "Search the Ext Forums"
+    },
+    "id": "ExtBox1-ext-gen5730",
+    "designerId": "4f534ad0-7c7d-4b27-9754-a91868fc9b5f",
+    "cn": [
+        {
+            "type": "combobox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "listConfig": [
+                    "{",
+                    "    loadingText: 'Searching...',",
+                    "    emptyText: 'No matching posts found.',",
+                    "",
+                    "    // Custom rendering template for each item",
+                    "    getInnerTpl: function() {",
+                    "        return '<div class=\"search-item\">' +",
+                    "            '<h3><span>{[Ext.Date.format(values.lastPost, \"M j, Y\")]}<br />by {author}</span>{title}</h3>' +",
+                    "            '{excerpt}' +",
+                    "        '</div>';",
+                    "    }",
+                    "}"
+                ],
+                "designer|userClassName": "MyComboBox",
+                "name": "comboSearch",
+                "fieldLabel": null,
+                "hideLabel": true,
+                "hideTrigger": true,
+                "displayField": "title",
+                "pageSize": 10,
+                "store": "Posts",
+                "typeAhead": false
+            },
+            "configAlternates": {
+                "listConfig": "object"
+            },
+            "designerId": "f5d11b38-13b7-4885-880c-f0a6afc6f02e",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "listConfig",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyComponent",
+                "html": "Live search requires a minimum of 4 characters.",
+                "style": "margin-top:10px"
+            },
+            "configAlternates": {
+                "style": "string",
+                "html": "string"
+            },
+            "designerId": "c98c18fc-4506-4ea5-b684-df24a8b3475a"
+        }
+    ]
+}

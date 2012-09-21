@@ -1,0 +1,91 @@
+{
+    "name": "forum_search",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 613,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000497,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "5abfc47a-7133-482b-8302-b65e44dc6be7": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "eb76b887-ec04-4912-bc68-dbb72752a000": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "33f5436b-6f80-428e-89b6-d86a529d9022": {
+            "paths": [
+                "metadata/controller/ForumSearch",
+                "app/controller/override/ForumSearch.js",
+                "app/controller/ForumSearch.js"
+            ],
+            "className": "ForumSearch"
+        },
+        "75bb7bdd-0956-490c-b006-a6d4672babac": {
+            "paths": [
+                "metadata/model/Post",
+                "app/model/override/Post.js",
+                "app/model/Post.js"
+            ],
+            "className": "Post"
+        },
+        "da073f5a-b3b6-4cb7-a8cb-3b943873a7e3": {
+            "paths": [
+                "metadata/store/Posts",
+                "app/store/override/Posts.js",
+                "app/store/Posts.js"
+            ],
+            "className": "Posts"
+        },
+        "4f534ad0-7c7d-4b27-9754-a91868fc9b5f": {
+            "paths": [
+                "metadata/view/ForumSearch",
+                "app/view/override/ForumSearch.js",
+                "app/view/ForumSearch.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "ForumSearch"
+        },
+        "b593e1db-0590-4bca-ab93-7bbf9b10e058": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "4f534ad0-7c7d-4b27-9754-a91868fc9b5f"
+        ],
+        "store": [
+            "da073f5a-b3b6-4cb7-a8cb-3b943873a7e3"
+        ],
+        "controller": [
+            "33f5436b-6f80-428e-89b6-d86a529d9022"
+        ],
+        "model": [
+            "75bb7bdd-0956-490c-b006-a6d4672babac"
+        ],
+        "resource": [
+            "5abfc47a-7133-482b-8302-b65e44dc6be7",
+            "eb76b887-ec04-4912-bc68-dbb72752a000",
+            "b593e1db-0590-4bca-ab93-7bbf9b10e058"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

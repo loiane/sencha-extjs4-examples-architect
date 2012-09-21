@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "../../shared/example.css"
+    },
+    "id": "ExtBox1-ext-gen2091",
+    "designerId": "eb76b887-ec04-4912-bc68-dbb72752a000"
+}

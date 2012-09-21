@@ -1,0 +1,16 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "name": "Sencha",
+        "controllers": [
+            "ForumSearch"
+        ]
+    },
+    "id": "ExtBox1-ext-gen1744",
+    "designerId": "application"
+}
