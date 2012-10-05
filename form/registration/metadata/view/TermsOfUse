@@ -1,0 +1,96 @@
+{
+    "type": "window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TermsOfUse",
+        "designer|userAlias": "termsofuse",
+        "autoShow": true,
+        "height": 400,
+        "loader": [
+            "{\r",
+            "    url: 'terms.html',\r",
+            "    autoLoad: true\r",
+            "}"
+        ],
+        "width": 700,
+        "autoScroll": true,
+        "bodyStyle": [
+            "padding: 10px 20px;"
+        ],
+        "title": "Terms of Use",
+        "modal": true
+    },
+    "id": "ExtBox1-ext-gen22912",
+    "designerId": "778a7687-e93b-4f0d-a11a-53d8806180a9",
+    "cn": [
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "container|pack": "end",
+                "designer|userClassName": "MyToolbar",
+                "ui": [
+                    "footer"
+                ]
+            },
+            "designerId": "894486e6-a28c-4fbb-ae0d-2d2bdec52e32",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "decline",
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton1",
+                        "width": 70,
+                        "text": "Decline"
+                    },
+                    "designerId": "679768bc-63c9-4fa6-8aa7-d6b92c299059",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "accept",
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton2",
+                        "width": 70,
+                        "text": "Accept"
+                    },
+                    "designerId": "d0d2cefa-96ad-411f-be3a-5c0cb48af219",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

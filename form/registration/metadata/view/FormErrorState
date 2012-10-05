@@ -1,0 +1,116 @@
+{
+    "type": "component",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "validText": "Form is valid",
+        "invalidText": "Form has errors",
+        "tipTpl": null,
+        "designer|userClassName": "FormErrorState",
+        "designer|userAlias": "formErrorState",
+        "baseCls": "form-error-state"
+    },
+    "configAlternates": {
+        "tipTpl": "object"
+    },
+    "id": "ExtBox1-ext-gen4984",
+    "designerId": "a5237584-624f-45e1-988e-df08f2c1b5b7",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "validText",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "invalidText",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "tipTpl",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getTip",
+                "fn": "getTip",
+                "implHandler": [
+                    "var tip = this.tip;\r",
+                    "if (!tip) {\r",
+                    "    tip = this.tip = Ext.widget('tooltip', {\r",
+                    "        target: this.el,\r",
+                    "        title: 'Error Details:',\r",
+                    "        autoHide: false,\r",
+                    "        anchor: 'top',\r",
+                    "        mouseOffset: [-11, -2],\r",
+                    "        closable: true,\r",
+                    "        constrainPosition: false,\r",
+                    "        cls: 'errors-tip'\r",
+                    "    });\r",
+                    "    tip.show();\r",
+                    "}\r",
+                    "return tip;"
+                ]
+            },
+            "designerId": "142e9b63-d8a8-4f64-9bc0-04c1871dbacc"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setErrors",
+                "fn": "setErrors",
+                "designer|params": [
+                    "errors"
+                ],
+                "implHandler": [
+                    "var me = this,\r",
+                    "    baseCls = me.baseCls,\r",
+                    "    tip = me.getTip();\r",
+                    "\r",
+                    "var tipTpl = Ext.create('Ext.XTemplate', \r",
+                    "                       [\r",
+                    "                           '<ul><tpl for=\".\">',\r",
+                    "                           '<li><span class=\"field-name\">{name}</span>: ',\r",
+                    "                           '<span class=\"error\">{error}</span></li>',\r",
+                    "                           '</tpl></ul>'\r",
+                    "                        ]);\r",
+                    "\r",
+                    "errors = Ext.Array.from(errors);\r",
+                    "\r",
+                    "// Update CSS class and tooltip content\r",
+                    "if (errors.length) {\r",
+                    "    me.addCls(baseCls + '-invalid');\r",
+                    "    me.removeCls(baseCls + '-valid');\r",
+                    "    me.update(me.invalidText);\r",
+                    "    tip.setDisabled(false);\r",
+                    "    tip.update(tipTpl.apply(errors));\r",
+                    "} else {\r",
+                    "    me.addCls(baseCls + '-valid');\r",
+                    "    me.removeCls(baseCls + '-invalid');\r",
+                    "    me.update(me.validText);\r",
+                    "    tip.setDisabled(true);\r",
+                    "    tip.hide();\r",
+                    "}"
+                ]
+            },
+            "designerId": "fce236af-6b7d-4f0f-8131-5816827a6fd3"
+        }
+    ]
+}

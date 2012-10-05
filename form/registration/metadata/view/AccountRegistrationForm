@@ -1,0 +1,247 @@
+{
+    "type": "form",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AccountRegistrationForm",
+        "designer|userAlias": "accountregistrationform",
+        "designer|initialView": true,
+        "frame": true,
+        "height": 250,
+        "width": 350,
+        "defaults": [
+            "{\r",
+            "    anchor: '100%',\r",
+            "    labelAlign: 'left',\r",
+            "    msgTarget: 'none',\r",
+            "    invalidCls: '' //unset the invalidCls so individual fields do not get styled as invalid\r",
+            "}"
+        ],
+        "bodyBorder": true,
+        "bodyPadding": 10,
+        "title": "Account Registration"
+    },
+    "id": "ExtBox1-ext-gen5572",
+    "designerId": "e75bca6a-e9ab-4973-83cc-34a0e8d07aec",
+    "cn": [
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField",
+                "name": "username",
+                "fieldLabel": "User Name",
+                "allowBlank": false,
+                "minLength": 6
+            },
+            "designerId": "c39f578f-90e4-406e-a23f-a869bd762847"
+        },
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField1",
+                "name": "email",
+                "fieldLabel": "Email Address",
+                "allowBlank": false,
+                "vtype": "email"
+            },
+            "designerId": "5db2ebaa-1ea5-49f2-8466-9a461572a6f7"
+        },
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField2",
+                "style": [
+                    "margin-top:15px"
+                ],
+                "inputType": "password",
+                "name": "password1",
+                "fieldLabel": "Password",
+                "allowBlank": false
+            },
+            "designerId": "eacdc933-e159-40c2-acab-45c3f2fb98e9"
+        },
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField3",
+                "inputType": "password",
+                "name": "password2",
+                "fieldLabel": "Repeat Password",
+                "allowBlank": false
+            },
+            "designerId": "15da8e81-4dd4-434b-9c90-8d333831e463",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "validator",
+                        "fn": "validator",
+                        "designer|params": [
+                            "value"
+                        ],
+                        "implHandler": [
+                            "var password1 = this.previousSibling('[name=password1]');\r",
+                            "return (value === password1.getValue()) ? true : 'Passwords do not match.';"
+                        ]
+                    },
+                    "designerId": "a86984b7-a28a-4711-bd2b-ae4fdd24e3d2"
+                }
+            ]
+        },
+        {
+            "type": "checkboxfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "listeners": [
+                    "{\r",
+                    "    click: {\r",
+                    "        element: 'boxLabelEl',\r",
+                    "        fn: function(e) {\r",
+                    "            var target = e.getTarget('.terms'),\r",
+                    "                win;\r",
+                    "            \r",
+                    "            e.preventDefault();\r",
+                    "            \r",
+                    "            var checkbox = Ext.ComponentQuery.query('checkboxfield[name=acceptTerms]')[0];\r",
+                    "            \r",
+                    "            if (target) {\r",
+                    "                checkbox.fireEvent('boxLabelClick');\r",
+                    "            }\r",
+                    "        }\r",
+                    "    }\r",
+                    "}"
+                ],
+                "designer|userClassName": "CheckBoxTermsOfUse",
+                "designer|userAlias": "checkboxtermsofuse",
+                "style": [
+                    "margin-top:15px"
+                ],
+                "name": "acceptTerms",
+                "fieldLabel": "Terms of Use",
+                "hideLabel": true,
+                "boxLabel": "I have read and accept the <a href=\"#\" class=\"terms\">Terms of Use</a>."
+            },
+            "configAlternates": {
+                "listeners": "object"
+            },
+            "designerId": "2a0a635c-0394-41a4-bb3c-4e62f6d61e62",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "listeners",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "basicfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "getErrors",
+                        "fn": "getErrors",
+                        "implHandler": [
+                            "return this.getValue() ? [] : ['You must accept the Terms of Use'];"
+                        ]
+                    },
+                    "designerId": "448eb4d1-c856-44a5-bb6d-219bfafa3963"
+                }
+            ]
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "container|align": "middle",
+                "container|padding": "10 10 5",
+                "designer|userClassName": "MyContainer",
+                "layout": "hbox"
+            },
+            "designerId": "7cf276d5-8c83-43e2-964f-bda7f0ddcfae",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1
+                    },
+                    "designerId": "fbfe5433-19ec-45ed-8290-fa439eb4b7b7",
+                    "masterInstanceId": "ExtBox1-ext-gen4984"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "submit",
+                        "layout|flex": 1,
+                        "formBind": true,
+                        "designer|userClassName": "MyButton",
+                        "disabled": true,
+                        "width": 140,
+                        "text": "Submit Registration"
+                    },
+                    "designerId": "4e6d6236-1eb5-4862-83bc-5c4d3cebe4f0",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

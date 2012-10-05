@@ -1,0 +1,208 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AccountRegistration",
+        "views": [
+            "AccountRegistrationForm"
+        ]
+    },
+    "id": "ExtBox1-ext-gen13869",
+    "designerId": "da3d2563-014f-4cc1-ab2c-9926713fcaa1",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onSubmitClick",
+                "fn": "onSubmitClick",
+                "implHandler": [
+                    "var form = button.up('form').getForm();\r",
+                    "\r",
+                    "/* Normally we would submit the form to the server here and handle the response...\r",
+                    "form.submit({\r",
+                    "    clientValidation: true,\r",
+                    "    url: 'register.php',\r",
+                    "    success: function(form, action) {\r",
+                    "       //...\r",
+                    "    },\r",
+                    "    failure: function(form, action) {\r",
+                    "        //...\r",
+                    "    }\r",
+                    "});\r",
+                    "*/\r",
+                    "\r",
+                    "if (form.isValid()) {\r",
+                    "    Ext.Msg.alert('Submitted Values', form.getValues(true));\r",
+                    "}"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "accountregistrationform button[action=submit]"
+            },
+            "designerId": "48b42e5a-ef25-40da-9b52-78b8244678fd"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onFormFieldValidityChange",
+                "fn": "onFormFieldValidityChange",
+                "designer|params": [
+                    "form"
+                ],
+                "implHandler": [
+                    "this.updateErrorState();"
+                ],
+                "name": "fieldvaliditychange",
+                "scope": "me",
+                "designer|targetType": "Ext.form.Panel",
+                "designer|controlQuery": "accountregistrationform"
+            },
+            "designerId": "c78d9414-c5a5-47c9-98d2-b3311b93a849"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onFormFieldErrorChange",
+                "fn": "onFormFieldErrorChange",
+                "designer|params": [
+                    "form"
+                ],
+                "implHandler": [
+                    "this.updateErrorState();"
+                ],
+                "name": "fielderrorchange",
+                "scope": "me",
+                "designer|targetType": "Ext.form.Panel",
+                "designer|controlQuery": "accountregistrationform"
+            },
+            "designerId": "a536f644-82a4-46a9-9bcf-ec3d23fe74c4"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "updateErrorState",
+                "fn": "updateErrorState",
+                "implHandler": [
+                    "var me = this.getFormAccountRegistration(),\r",
+                    "errorCmp, fields, errors;\r",
+                    "\r",
+                    "if (me.hasBeenDirty || me.getForm().isDirty()) { //prevents showing global error when form first loads\r",
+                    "    errorCmp = me.down('formErrorState');\r",
+                    "    fields = me.getForm().getFields();\r",
+                    "    errors = [];\r",
+                    "    fields.each(function(field) {\r",
+                    "        Ext.Array.forEach(field.getErrors(), function(error) {\r",
+                    "            errors.push({name: field.getFieldLabel(), error: error});\r",
+                    "        });\r",
+                    "    });\r",
+                    "    errorCmp.setErrors(errors);\r",
+                    "    me.hasBeenDirty = true;\r",
+                    "}"
+                ]
+            },
+            "designerId": "a42ca630-7a44-4859-be8f-d7f83eb5b14d"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "formAccountRegistration",
+                "ref": "formAccountRegistration",
+                "selector": "accountregistrationform",
+                "xtype": "form"
+            },
+            "designerId": "65e80255-1d8e-47c8-9833-2eed211b901c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onCheckboxfieldBoxLabelClick",
+                "fn": "onCheckboxfieldBoxLabelClick",
+                "implHandler": [
+                    "Ext.create('Sencha.view.TermsOfUse');"
+                ],
+                "name": "boxLabelClick",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.Checkbox",
+                "designer|controlQuery": "accountregistrationform checkboxfield[name=acceptTerms]"
+            },
+            "designerId": "f5faefe9-9bea-43d4-a71f-36184d9e78af"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onDeclineClick",
+                "fn": "onDeclineClick",
+                "implHandler": [
+                    "button.up('window').close();\r",
+                    "this.getFormAccountRegistration().down('[name=acceptTerms]').setValue(false);"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "termsofuse button[action=decline]"
+            },
+            "designerId": "6f1eaed3-5c86-4b5e-9df1-514189d93ea2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onAcceptClick",
+                "fn": "onAcceptClick",
+                "implHandler": [
+                    "button.up('window').close();\r",
+                    "this.getFormAccountRegistration().down('[name=acceptTerms]').setValue(true);"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "termsofuse button[action=accept]"
+            },
+            "designerId": "de0a940b-ff68-40ad-9a18-68ff4ecc4337"
+        }
+    ]
+}

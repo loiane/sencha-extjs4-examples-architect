@@ -1,0 +1,20 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "TermsOfUse"
+        ],
+        "autoCreateViewport": true,
+        "name": "Sencha",
+        "controllers": [
+            "AccountRegistration"
+        ]
+    },
+    "id": "ExtBox1-ext-gen5382",
+    "designerId": "application"
+}

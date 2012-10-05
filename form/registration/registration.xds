@@ -1,0 +1,89 @@
+{
+    "name": "registration",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 640,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext40",
+    "topInstanceFileMap": {
+        "fae80910-ae84-4531-a396-93cb9e4bc889": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "e75bca6a-e9ab-4973-83cc-34a0e8d07aec": {
+            "paths": [
+                "metadata/view/AccountRegistrationForm",
+                "app/view/override/AccountRegistrationForm.js",
+                "app/view/AccountRegistrationForm.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "AccountRegistrationForm"
+        },
+        "da3d2563-014f-4cc1-ab2c-9926713fcaa1": {
+            "paths": [
+                "metadata/controller/AccountRegistration",
+                "app/controller/override/AccountRegistration.js",
+                "app/controller/AccountRegistration.js"
+            ],
+            "className": "AccountRegistration"
+        },
+        "778a7687-e93b-4f0d-a11a-53d8806180a9": {
+            "paths": [
+                "metadata/view/TermsOfUse",
+                "app/view/override/TermsOfUse.js",
+                "app/view/TermsOfUse.js"
+            ],
+            "className": "TermsOfUse"
+        },
+        "f08f4118-f2af-469e-a2ba-fb5f2e80e506": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "30c8fa7b-e47c-419c-8cdc-3780f1d477a8": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
+        },
+        "a5237584-624f-45e1-988e-df08f2c1b5b7": {
+            "paths": [
+                "metadata/view/FormErrorState",
+                "app/view/override/FormErrorState.js",
+                "app/view/FormErrorState.js"
+            ],
+            "className": "FormErrorState"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "e75bca6a-e9ab-4973-83cc-34a0e8d07aec",
+            "778a7687-e93b-4f0d-a11a-53d8806180a9",
+            "a5237584-624f-45e1-988e-df08f2c1b5b7"
+        ],
+        "store": [],
+        "controller": [
+            "da3d2563-014f-4cc1-ab2c-9926713fcaa1"
+        ],
+        "model": [],
+        "resource": [
+            "fae80910-ae84-4531-a396-93cb9e4bc889",
+            "30c8fa7b-e47c-419c-8cdc-3780f1d477a8",
+            "f08f4118-f2af-469e-a2ba-fb5f2e80e506"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
