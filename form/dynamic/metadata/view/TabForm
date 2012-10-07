@@ -1,0 +1,312 @@
+{
+    "type": "form",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "fieldDefaults": [
+            "{",
+            "            labelWidth: 75,",
+            "            msgTarget: 'side'",
+            "        }"
+        ],
+        "designer|userClassName": "TabForm",
+        "designer|userAlias": "tabform",
+        "border": false,
+        "height": null,
+        "width": 350,
+        "bodyBorder": false,
+        "bodyPadding": 10,
+        "title": null
+    },
+    "configAlternates": {
+        "fieldDefaults": "object"
+    },
+    "id": "ExtBox1-ext-gen14351",
+    "designerId": "0663e740-3b5e-472a-ad92-4745d4267a78",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "fieldDefaults",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "tabpanel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "TabFields",
+                "designer|userAlias": "tabfields",
+                "defaults": [
+                    "{",
+                    "    bodyPadding: 10,",
+                    "    layout: 'anchor'",
+                    "}"
+                ],
+                "activeTab": 0
+            },
+            "designerId": "6b9c595c-1df1-4ddc-93a2-e24f8e45465d",
+            "cn": [
+                {
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyPanel",
+                        "defaults": [
+                            "{anchor: '100%'}"
+                        ],
+                        "title": "Personal Details"
+                    },
+                    "designerId": "e960646d-036c-47f3-8f27-083ad9b0bf3b",
+                    "cn": [
+                        {
+                            "type": "tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "TabConfig"
+                            },
+                            "designerId": "f4e8fbdd-49a3-4f73-a038-17cd4963d73f"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField16",
+                                "name": "first",
+                                "value": [
+                                    "Ed"
+                                ],
+                                "fieldLabel": "First Name",
+                                "allowBlank": false
+                            },
+                            "designerId": "56c46828-f6c7-4e01-9de1-0d0acf467048",
+                            "cn": [
+                                {
+                                    "type": "template",
+                                    "reference": {
+                                        "name": "afterLabelTextTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "afterLabelTextTpl",
+                                        "implHandler": [
+                                            "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                                        ],
+                                        "designer|displayName": "afterLabelTextTpl"
+                                    },
+                                    "designerId": "1f2cd860-a490-495f-bc7c-082b44063ddd"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField17",
+                                "name": "last",
+                                "value": [
+                                    "Spencer"
+                                ],
+                                "fieldLabel": "Last Name",
+                                "allowBlank": false
+                            },
+                            "designerId": "bcfb38d2-6dba-433b-886a-c0c1ea892698",
+                            "cn": [
+                                {
+                                    "type": "template",
+                                    "reference": {
+                                        "name": "afterLabelTextTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "afterLabelTextTpl",
+                                        "implHandler": [
+                                            "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                                        ],
+                                        "designer|displayName": "afterLabelTextTpl"
+                                    },
+                                    "designerId": "8a754a80-7446-4a0a-8b16-ade05795db5d"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField18",
+                                "name": "company",
+                                "value": [
+                                    "Ext JS"
+                                ],
+                                "fieldLabel": "Company"
+                            },
+                            "designerId": "b5c5e5ef-4eb9-4925-9a1f-9076e5651e21"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField19",
+                                "name": "email",
+                                "fieldLabel": "Email",
+                                "allowBlank": false,
+                                "vtype": "email"
+                            },
+                            "designerId": "308a3b6c-b65a-4666-9b4d-5f9a12be3e0d",
+                            "cn": [
+                                {
+                                    "type": "template",
+                                    "reference": {
+                                        "name": "afterLabelTextTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "afterLabelTextTpl",
+                                        "implHandler": [
+                                            "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                                        ],
+                                        "designer|displayName": "afterLabelTextTpl"
+                                    },
+                                    "designerId": "bb5b3853-eed0-4bf7-89cb-004991aa1284"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyPanel1",
+                        "defaults": [
+                            "{anchor: '100%'}"
+                        ],
+                        "title": "Phone Numbers"
+                    },
+                    "designerId": "adc101fa-98e9-44fa-8739-bfc73eaf51fe",
+                    "cn": [
+                        {
+                            "type": "tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "TabConfig1"
+                            },
+                            "designerId": "ee1bb878-8fca-4cac-af50-56f1f0fff167"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField20",
+                                "name": "home",
+                                "value": [
+                                    "(888) 555-1212"
+                                ],
+                                "fieldLabel": "Home"
+                            },
+                            "designerId": "55cdb3ce-a805-4b47-b61c-fcb5b4eb33c9"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField21",
+                                "name": "business",
+                                "fieldLabel": "Business"
+                            },
+                            "designerId": "d42cf7a1-5351-4435-8e53-627b83307809"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField22",
+                                "name": "mobile",
+                                "fieldLabel": "Mobile"
+                            },
+                            "designerId": "a407f981-5b42-4ce1-9116-7939ef541a2c"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField23",
+                                "name": "fax",
+                                "fieldLabel": "Fax"
+                            },
+                            "designerId": "6b261c25-8935-43d4-bbb1-04953eee2e7b"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "aa684484-472e-46f2-be40-30a3fde4af4f",
+            "masterInstanceId": "ExtBox1-ext-gen2032"
+        }
+    ]
+}

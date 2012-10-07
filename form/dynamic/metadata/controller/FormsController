@@ -1,0 +1,152 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FormsController",
+        "views": [
+            "SimpleForm",
+            "FieldSetForm",
+            "MultiColumnForm",
+            "TabForm",
+            "InnerTabsForm"
+        ]
+    },
+    "id": "ExtBox1-ext-gen55002",
+    "designerId": "cef581ff-7e5c-482c-8003-e0c9cb531de2",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onCancelClick",
+                "fn": "onCancelClick",
+                "implHandler": [
+                    "button.up('form').getForm().reset();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "savecanceltoolbar button[action=cancel]"
+            },
+            "designerId": "7615b1a2-34ce-4feb-834e-7c37406949ec"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onSimpleFormSave",
+                "fn": "onSimpleFormSave",
+                "implHandler": [
+                    "button.up('form').getForm().isValid();",
+                    "",
+                    "//logic to send form data to server"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "simpleform button[action=savel]"
+            },
+            "designerId": "e99d5140-6292-4f49-891a-1c7066ac91eb"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onFieldSetFormSave",
+                "fn": "onFieldSetFormSave",
+                "implHandler": [
+                    "button.up('form').getForm().isValid();",
+                    "",
+                    "//logic to send form data to server"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "fieldsetform button[action=save]"
+            },
+            "designerId": "63e35089-05c8-419e-ab37-fae3ea895069"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onMultiColumnFormSave",
+                "fn": "onMultiColumnFormSave",
+                "implHandler": [
+                    "button.up('form').getForm().isValid();",
+                    "",
+                    "//logic to send form data to server"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "multicolumnform button[action=save]"
+            },
+            "designerId": "e260718f-59e1-4df2-89db-4df8b39ddc82"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onTabFormSave",
+                "fn": "onTabFormSave",
+                "implHandler": [
+                    "button.up('form').getForm().isValid();",
+                    "",
+                    "//logic to send form data to server"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "tabform button[action=save]"
+            },
+            "designerId": "d496e979-d249-43ae-99dc-104702ebc323"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onInnerTabsFormSave",
+                "fn": "onInnerTabsFormSave",
+                "implHandler": [
+                    "button.up('form').getForm().isValid();",
+                    "",
+                    "//logic to send form data to server"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "innertabsform button[action=save]"
+            },
+            "designerId": "e87231b3-fc81-41d5-b1ae-3f212f935464"
+        }
+    ]
+}

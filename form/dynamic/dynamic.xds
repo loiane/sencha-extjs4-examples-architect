@@ -1,0 +1,117 @@
+{
+    "name": "dynamic",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 640,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "2cfa65d2-ebad-4e85-bbb1-a92938629b12": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "55452445-11a9-4411-8fb1-2d84263a3db7": {
+            "paths": [
+                "metadata/view/SimpleForm",
+                "app/view/override/SimpleForm.js",
+                "app/view/SimpleForm.js"
+            ],
+            "className": "SimpleForm"
+        },
+        "23817abe-c9f4-4e65-ab92-2a940ab213f2": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "a1d6c5f8-5400-4c65-ab6f-8288a35ee7a2": {
+            "paths": [
+                "metadata/view/FieldSetForm",
+                "app/view/override/FieldSetForm.js",
+                "app/view/FieldSetForm.js"
+            ],
+            "className": "FieldSetForm"
+        },
+        "d29cd1c1-8580-46d7-ae88-6ebf48390699": {
+            "paths": [
+                "metadata/view/SaveCancelToolbar",
+                "app/view/override/SaveCancelToolbar.js",
+                "app/view/SaveCancelToolbar.js"
+            ],
+            "className": "SaveCancelToolbar"
+        },
+        "c886b1f5-2a7e-43d5-b638-db7c1a50d52b": {
+            "paths": [
+                "metadata/view/MultiColumnForm",
+                "app/view/override/MultiColumnForm.js",
+                "app/view/MultiColumnForm.js"
+            ],
+            "className": "MultiColumnForm"
+        },
+        "0663e740-3b5e-472a-ad92-4745d4267a78": {
+            "paths": [
+                "metadata/view/TabForm",
+                "app/view/override/TabForm.js",
+                "app/view/TabForm.js"
+            ],
+            "className": "TabForm"
+        },
+        "62613e3d-f0a7-4dab-af5d-0b90dd530794": {
+            "paths": [
+                "metadata/view/InnerTabsForm",
+                "app/view/override/InnerTabsForm.js",
+                "app/view/InnerTabsForm.js"
+            ],
+            "className": "InnerTabsForm"
+        },
+        "1b283c8d-832c-4e13-82e2-16d3951517fb": {
+            "paths": [
+                "metadata/view/ContainerFields",
+                "app/view/override/ContainerFields.js",
+                "app/view/ContainerFields.js"
+            ],
+            "className": "ContainerFields"
+        },
+        "cef581ff-7e5c-482c-8003-e0c9cb531de2": {
+            "paths": [
+                "metadata/controller/FormsController",
+                "app/controller/override/FormsController.js",
+                "app/controller/FormsController.js"
+            ],
+            "className": "FormsController"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "55452445-11a9-4411-8fb1-2d84263a3db7",
+            "a1d6c5f8-5400-4c65-ab6f-8288a35ee7a2",
+            "c886b1f5-2a7e-43d5-b638-db7c1a50d52b",
+            "0663e740-3b5e-472a-ad92-4745d4267a78",
+            "62613e3d-f0a7-4dab-af5d-0b90dd530794",
+            "d29cd1c1-8580-46d7-ae88-6ebf48390699",
+            "1b283c8d-832c-4e13-82e2-16d3951517fb"
+        ],
+        "store": [],
+        "controller": [
+            "cef581ff-7e5c-482c-8003-e0c9cb531de2"
+        ],
+        "model": [],
+        "resource": [
+            "2cfa65d2-ebad-4e85-bbb1-a92938629b12",
+            "23817abe-c9f4-4e65-ab92-2a940ab213f2"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

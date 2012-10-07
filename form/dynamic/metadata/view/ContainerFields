@@ -1,0 +1,177 @@
+{
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userClassName": "ContainerFields",
+        "designer|userAlias": "containerFields",
+        "designer|displayName": "fields",
+        "layout": "hbox"
+    },
+    "id": "ExtBox1-ext-gen16882",
+    "designerId": "1b283c8d-832c-4e13-82e2-16d3951517fb",
+    "cn": [
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyContainer2",
+                "designer|displayName": "nameAndCompany",
+                "layout": "anchor"
+            },
+            "designerId": "3ee8dc77-b35a-4ccd-bb23-d3267aaf1f39",
+            "cn": [
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "95%",
+                        "designer|userClassName": "MyTextField12",
+                        "name": "first",
+                        "value": [
+                            "Don"
+                        ],
+                        "fieldLabel": "First Name",
+                        "allowBlank": false
+                    },
+                    "designerId": "cd6274e0-21b4-4fb3-94e5-f36452695dad",
+                    "cn": [
+                        {
+                            "type": "template",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                                ],
+                                "designer|displayName": "afterLabelTextTpl"
+                            },
+                            "designerId": "32f85cf8-04d1-45a4-bfe8-10ac47117f46"
+                        }
+                    ]
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "95%",
+                        "designer|userClassName": "MyTextField13",
+                        "name": "company",
+                        "fieldLabel": "Company"
+                    },
+                    "designerId": "64a2606c-3c56-4270-81ac-906f33d1ae31"
+                }
+            ]
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyContainer1",
+                "designer|displayName": "lastAndEmail",
+                "layout": "anchor"
+            },
+            "designerId": "fe1c0883-3c88-444a-91d1-6f32845bc9c9",
+            "cn": [
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField14",
+                        "name": "last",
+                        "value": [
+                            "Griffin"
+                        ],
+                        "fieldLabel": "Last Name",
+                        "allowBlank": false
+                    },
+                    "designerId": "1253b916-d7d8-4981-b108-f2ea882bacd6",
+                    "cn": [
+                        {
+                            "type": "template",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                                ],
+                                "designer|displayName": "afterLabelTextTpl"
+                            },
+                            "designerId": "975e3e53-4bdd-4a32-a51a-04e3a872edcf"
+                        }
+                    ]
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField15",
+                        "name": "email",
+                        "fieldLabel": "Email",
+                        "allowBlank": false,
+                        "vtype": "email"
+                    },
+                    "designerId": "4ea8bf1a-01f3-4dc2-8d96-f6461fef5a71",
+                    "cn": [
+                        {
+                            "type": "template",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                                ],
+                                "designer|displayName": "afterLabelTextTpl"
+                            },
+                            "designerId": "1202248f-05d4-40eb-aae8-87f0ca34efcc"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

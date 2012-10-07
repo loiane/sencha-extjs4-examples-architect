@@ -1,0 +1,262 @@
+{
+    "type": "form",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FieldSetForm",
+        "designer|userAlias": "fieldsetform",
+        "frame": true,
+        "height": null,
+        "width": 350,
+        "defaults": [
+            "{",
+            "    anchor: '100%',",
+            "    msgTarget: 'side',",
+            "    labelWidth: 75",
+            "}"
+        ],
+        "bodyPadding": "5 5 0",
+        "collapsible": true,
+        "title": "Simple Form with FieldSets",
+        "url": "save-form.php"
+    },
+    "id": "ExtBox1-ext-gen2216",
+    "designerId": "a1d6c5f8-5400-4c65-ab6f-8288a35ee7a2",
+    "cn": [
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet",
+                "defaults": [
+                    "{",
+                    "    anchor: '100%'",
+                    "}"
+                ],
+                "checkboxToggle": true,
+                "collapsed": true,
+                "title": "User Information"
+            },
+            "designerId": "2f323ed6-9322-44be-ad89-18fc439eafdf",
+            "cn": [
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField4",
+                        "name": "first",
+                        "fieldLabel": "First Name",
+                        "allowBlank": false
+                    },
+                    "designerId": "918959b0-fe86-4108-a0f5-c54c5e5b6919",
+                    "cn": [
+                        {
+                            "type": "template",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                                ],
+                                "designer|displayName": "afterLabelTextTpl"
+                            },
+                            "designerId": "482d2561-9a02-4d72-9dc8-a4f44b4d5097"
+                        }
+                    ]
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField5",
+                        "name": "last",
+                        "fieldLabel": "Last Name"
+                    },
+                    "designerId": "9aff3a10-b282-4519-9adc-e3607277a9dd",
+                    "cn": [
+                        {
+                            "type": "template",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                                ],
+                                "designer|displayName": "afterLabelTextTpl"
+                            },
+                            "designerId": "6c526407-9473-48ee-9525-45d2acde1cec"
+                        }
+                    ]
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField6",
+                        "name": "company",
+                        "fieldLabel": "Company"
+                    },
+                    "designerId": "84cb63ef-f7f5-477b-88fe-96f66e7dae66"
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField7",
+                        "name": "email",
+                        "fieldLabel": "Email",
+                        "vtype": "email"
+                    },
+                    "designerId": "8670acb1-6c3d-4cb0-add0-43bb64551082",
+                    "cn": [
+                        {
+                            "type": "template",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                                ],
+                                "designer|displayName": "afterLabelTextTpl"
+                            },
+                            "designerId": "afba3506-02d6-4b01-b328-6eaa22956536"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet1",
+                "defaults": [
+                    "{",
+                    "                anchor: '100%'",
+                    "            }"
+                ],
+                "collapsible": true,
+                "title": "Phone Number"
+            },
+            "designerId": "6f87dd84-95ad-41fa-b054-5f6722818e5c",
+            "cn": [
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField8",
+                        "name": "home",
+                        "value": [
+                            "(888) 555-1212"
+                        ],
+                        "fieldLabel": "Home"
+                    },
+                    "designerId": "082df63a-1633-4847-902d-f0a7afb0b369"
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField9",
+                        "name": "business",
+                        "fieldLabel": "Business"
+                    },
+                    "designerId": "2a03aa29-36fb-4867-b3d3-6702fe74d9d2"
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField10",
+                        "name": "mobile",
+                        "fieldLabel": "Mobile"
+                    },
+                    "designerId": "bd487900-35db-4f60-99e8-fff7e5b8202a"
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField11",
+                        "name": "fax",
+                        "fieldLabel": "Fax"
+                    },
+                    "designerId": "5fe4dba1-d69b-402b-a2c0-a14a0aa4c93d"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "5e536116-7baf-408b-9018-f30e35dbe5d5",
+            "masterInstanceId": "ExtBox1-ext-gen2032"
+        }
+    ]
+}

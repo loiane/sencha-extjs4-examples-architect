@@ -1,0 +1,66 @@
+{
+    "type": "toolbar",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|pack": "end",
+        "designer|userClassName": "SaveCancelToolbar",
+        "designer|userAlias": "savecanceltoolbar",
+        "ui": [
+            "footer"
+        ]
+    },
+    "id": "ExtBox1-ext-gen2032",
+    "designerId": "d29cd1c1-8580-46d7-ae88-6ebf48390699",
+    "cn": [
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "action": "save",
+                "designer|userClassName": "MyButton",
+                "width": 80,
+                "text": "Save"
+            },
+            "designerId": "c2132d76-cb22-4ba6-98ff-4d94f9a27937",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "action",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "action": "cancel",
+                "designer|userClassName": "MyButton1",
+                "width": 80,
+                "text": "Cancel"
+            },
+            "designerId": "8130cbaf-22e9-4a12-8f50-f192dcb3f751",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "action",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

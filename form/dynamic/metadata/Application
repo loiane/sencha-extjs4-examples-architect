@@ -1,0 +1,56 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "name": "Sencha",
+        "controllers": [
+            "FormsController"
+        ]
+    },
+    "id": "ExtBox1-ext-gen1782",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "var bd = Ext.getBody();",
+                    "",
+                    "bd.createChild({tag: 'h1', html: 'Dynamic Forms built with JavaScript'});",
+                    "",
+                    "bd.createChild({tag: 'h2', html: 'Form 1 - Very Simple'});",
+                    "",
+                    "Ext.create('Sencha.view.SimpleForm',{renderTo: bd});",
+                    "",
+                    "bd.createChild({tag: 'h2', html: 'Form 2 - Adding fieldsets'});",
+                    "",
+                    "Ext.create('Sencha.view.FieldSetForm',{renderTo: bd});",
+                    "",
+                    "bd.createChild({tag: 'h2', html: 'Form 3 - A little more complex'});",
+                    "",
+                    "Ext.create('Sencha.view.MultiColumnForm',{renderTo: bd});",
+                    "",
+                    "bd.createChild({tag: 'h2', html: 'Form 4 - Forms can be a TabPanel...'});",
+                    "",
+                    "Ext.create('Sencha.view.TabForm',{renderTo: bd});",
+                    "",
+                    "bd.createChild({tag: 'h2', html: 'Form 5 - ... and forms can contain TabPanel(s)'});",
+                    "",
+                    "Ext.create('Sencha.view.InnerTabsForm',{renderTo: bd});"
+                ]
+            },
+            "designerId": "91e24f91-dfa1-46da-8d42-8f33a7efe473"
+        }
+    ]
+}

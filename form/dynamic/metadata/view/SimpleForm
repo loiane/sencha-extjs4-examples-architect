@@ -1,0 +1,211 @@
+{
+    "type": "form",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "SimpleForm",
+        "designer|userAlias": "simpleform",
+        "frame": true,
+        "height": null,
+        "width": 350,
+        "defaults": [
+            "{",
+            "            msgTarget: 'side',",
+            "            labelWidth: 75",
+            "        }"
+        ],
+        "bodyPadding": "5 5 0",
+        "collapsible": true,
+        "title": "My Form",
+        "url": "save-form.php"
+    },
+    "id": "ExtBox1-ext-gen3045",
+    "designerId": "55452445-11a9-4411-8fb1-2d84263a3db7",
+    "cn": [
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField",
+                "name": "firstName",
+                "fieldLabel": "First Name",
+                "allowBlank": false
+            },
+            "designerId": "161ff2ba-0e0c-45de-8d94-fbda842497a4",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "afterLabelTextTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "afterLabelTextTpl",
+                        "implHandler": [
+                            "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                        ],
+                        "designer|displayName": "afterLabelTextTpl"
+                    },
+                    "designerId": "cc25e27c-68c5-48f5-9e6a-46c063638ee2"
+                }
+            ]
+        },
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField1",
+                "name": "lastName",
+                "fieldLabel": "Last Name"
+            },
+            "designerId": "2d2e8fba-1f0b-40b4-baa9-a5d8bde348c0",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "afterLabelTextTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "afterLabelTextTpl",
+                        "implHandler": [
+                            "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                        ],
+                        "designer|displayName": "afterLabelTextTpl"
+                    },
+                    "designerId": "7e396401-00d5-4c93-80f6-67c567c58dfa"
+                }
+            ]
+        },
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField2",
+                "name": "company",
+                "fieldLabel": "Company"
+            },
+            "designerId": "48fdbee4-6bf4-4409-87ae-b3922260c3e7"
+        },
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField3",
+                "name": "email",
+                "fieldLabel": "Email",
+                "vtype": "email"
+            },
+            "designerId": "434aa521-df88-4619-b531-8dca09a7c090",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "afterLabelTextTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "afterLabelTextTpl",
+                        "implHandler": [
+                            "<span style=\"color:red;font-weight:bold\" data-qtip=\"Required\">*</span>"
+                        ],
+                        "designer|displayName": "afterLabelTextTpl"
+                    },
+                    "designerId": "1f51810b-3a9a-4ef8-869a-f1ca0b49e1da"
+                }
+            ]
+        },
+        {
+            "type": "datefield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyDateField",
+                "name": "dob",
+                "fieldLabel": "DOB"
+            },
+            "designerId": "2ed69322-60d9-4107-90f1-8eeeb2a761d9"
+        },
+        {
+            "type": "numberfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyNumberField",
+                "name": "age",
+                "fieldLabel": "Age",
+                "maxValue": 100,
+                "minValue": 0
+            },
+            "designerId": "1c356034-0b71-4740-ba70-b7565f685f13"
+        },
+        {
+            "type": "timefield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTimeField",
+                "name": "time",
+                "fieldLabel": "Time",
+                "maxValue": "6:00pm",
+                "minValue": "8:00am"
+            },
+            "configAlternates": {
+                "minValue": "string",
+                "maxValue": "string"
+            },
+            "designerId": "5eb8a78e-cb58-474f-bfd1-942a19e31834"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom"
+            },
+            "designerId": "241dc6b1-243a-481b-9adf-2b5df8ffd34c",
+            "masterInstanceId": "ExtBox1-ext-gen2032"
+        }
+    ]
+}

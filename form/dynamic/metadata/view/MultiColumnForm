@@ -1,0 +1,79 @@
+{
+    "type": "form",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "fieldDefaults": [
+            "{",
+            "                labelAlign: 'top',",
+            "                msgTarget: 'side'",
+            "            }"
+        ],
+        "designer|userClassName": "MultiColumnForm",
+        "designer|userAlias": "multicolumnform",
+        "frame": true,
+        "height": null,
+        "width": 600,
+        "defaults": null,
+        "bodyPadding": "5 5 0",
+        "collapsible": true,
+        "title": "Multi Column, Nested Layouts and Anchoring"
+    },
+    "configAlternates": {
+        "fieldDefaults": "object"
+    },
+    "id": "ExtBox1-ext-gen13618",
+    "designerId": "c886b1f5-2a7e-43d5-b638-db7c1a50d52b",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "fieldDefaults",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%"
+            },
+            "designerId": "b0ba4a30-449e-4885-b3ac-8c7399718517",
+            "masterInstanceId": "ExtBox1-ext-gen16882"
+        },
+        {
+            "type": "htmleditor",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyHTMLEditor",
+                "height": 200,
+                "style": null,
+                "name": "bio",
+                "fieldLabel": "Biography"
+            },
+            "designerId": "0cfb4e22-9820-441a-ad34-caba1a9e8ed9"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "9ce9c471-1a8e-411c-b5c5-0feef46c6918",
+            "masterInstanceId": "ExtBox1-ext-gen2032"
+        }
+    ]
+}
