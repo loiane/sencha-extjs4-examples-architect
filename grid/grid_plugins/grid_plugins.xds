@@ -1,0 +1,117 @@
+{
+    "name": "grid_plugins",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 640,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "5e55ea8d-441b-4552-b102-dc323b481fdd": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "fa03698c-c504-4478-9332-eea44c5f6ec8": {
+            "paths": [
+                "metadata/model/Company",
+                "app/model/override/Company.js",
+                "app/model/Company.js"
+            ],
+            "className": "Company"
+        },
+        "2360c8e9-53b3-46c5-92d6-2d0b491e5f59": {
+            "paths": [
+                "metadata/store/Companies",
+                "app/store/override/Companies.js",
+                "app/store/Companies.js"
+            ],
+            "className": "Companies"
+        },
+        "78a2128d-9c32-4011-8e6d-6487fa51f6fc": {
+            "paths": [
+                "metadata/view/GridRowExpander",
+                "app/view/override/GridRowExpander.js",
+                "app/view/GridRowExpander.js"
+            ],
+            "className": "GridRowExpander"
+        },
+        "ef763971-f472-4baa-ad89-7b07eee9af9b": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "ce8a0ee6-1291-450a-9b13-e95f7d86e2aa": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
+        },
+        "de1537b7-e40f-457f-b868-ab5459116b73": {
+            "paths": [
+                "metadata/view/GridSelectionModel",
+                "app/view/override/GridSelectionModel.js",
+                "app/view/GridSelectionModel.js"
+            ],
+            "className": "GridSelectionModel"
+        },
+        "bdeafe43-10c0-4c73-a06e-3547c691a870": {
+            "paths": [
+                "metadata/view/GridRowNumberer",
+                "app/view/override/GridRowNumberer.js",
+                "app/view/GridRowNumberer.js"
+            ],
+            "className": "GridRowNumberer"
+        },
+        "eb7bde58-3766-49c2-b449-53eef6f8565e": {
+            "paths": [
+                "metadata/view/GridPanelToolbar",
+                "app/view/override/GridPanelToolbar.js",
+                "app/view/GridPanelToolbar.js"
+            ],
+            "className": "GridPanelToolbar"
+        },
+        "6abd39f5-67fd-40f2-a0bd-d378d3b18a97": {
+            "paths": [
+                "metadata/controller/GridPlugins",
+                "app/controller/override/GridPlugins.js",
+                "app/controller/GridPlugins.js"
+            ],
+            "className": "GridPlugins"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "78a2128d-9c32-4011-8e6d-6487fa51f6fc",
+            "de1537b7-e40f-457f-b868-ab5459116b73",
+            "bdeafe43-10c0-4c73-a06e-3547c691a870",
+            "eb7bde58-3766-49c2-b449-53eef6f8565e"
+        ],
+        "store": [
+            "2360c8e9-53b3-46c5-92d6-2d0b491e5f59"
+        ],
+        "controller": [
+            "6abd39f5-67fd-40f2-a0bd-d378d3b18a97"
+        ],
+        "model": [
+            "fa03698c-c504-4478-9332-eea44c5f6ec8"
+        ],
+        "resource": [
+            "5e55ea8d-441b-4552-b102-dc323b481fdd",
+            "ef763971-f472-4baa-ad89-7b07eee9af9b",
+            "ce8a0ee6-1291-450a-9b13-e95f7d86e2aa"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

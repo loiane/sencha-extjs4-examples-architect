@@ -1,0 +1,294 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GridPanelToolbar",
+        "designer|userAlias": "grid4",
+        "frame": true,
+        "height": 300,
+        "width": 600,
+        "animCollapse": false,
+        "collapsible": true,
+        "iconCls": "icon-grid",
+        "title": "Support for standard Panel features such as framing, buttons and toolbars",
+        "columnLines": true,
+        "store": "Companies"
+    },
+    "id": "ExtBox1-ext-gen16656",
+    "designerId": "eb7bde58-3766-49c2-b449-53eef6f8565e",
+    "cn": [
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn",
+                "dataIndex": "company",
+                "flex": 1,
+                "text": "Company"
+            },
+            "designerId": "ece4d662-7cc2-44b8-ab98-7fe3cbe22176"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn1",
+                "dataIndex": "price",
+                "text": "Price"
+            },
+            "designerId": "3eae10cc-b01a-426d-9173-ef110a69ec75",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "renderer",
+                        "fn": "renderer",
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "implHandler": [
+                            "return Ext.util.Format.usMoney(value);"
+                        ]
+                    },
+                    "designerId": "424dbdd4-6294-4a98-bc23-135a249112b5"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn3",
+                "dataIndex": "change",
+                "text": "Change"
+            },
+            "designerId": "415adcb6-bfbf-48b1-bb7e-d4488508cce5"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn4",
+                "dataIndex": "pctChange",
+                "text": "% Change"
+            },
+            "designerId": "bc39cb82-6bc4-4ee2-a2fc-3bb1146bf450"
+        },
+        {
+            "type": "datecolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyDateColumn",
+                "dataIndex": "lastChange",
+                "text": "Last Updated",
+                "format": "m/d/Y"
+            },
+            "designerId": "a1b3407a-6a96-4c89-abf7-193599f4939b"
+        },
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView"
+            },
+            "designerId": "3cc06b6b-b80d-4e77-a34c-6d078894b665"
+        },
+        {
+            "type": "checkboxselectionmodel",
+            "reference": {
+                "name": "selModel",
+                "type": "object"
+            },
+            "codeClass": "Ext.selection.CheckboxModel",
+            "userConfig": {
+                "designer|userClassName": "MyCheckboxSelectionModel1"
+            },
+            "designerId": "25910f3e-1428-446c-ac4c-7b62502e6bfe"
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "container|pack": "center",
+                "designer|userClassName": "MyToolbar",
+                "ui": [
+                    "footer"
+                ]
+            },
+            "designerId": "7b96c75c-0a4c-4e6a-bf80-e7df4296e3e9",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton",
+                        "minWidth": 80,
+                        "text": "Save"
+                    },
+                    "designerId": "d8d86f65-9bd4-4b16-9c4c-e8f42541e5ab"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton1",
+                        "minWidth": 80,
+                        "text": "Cancel"
+                    },
+                    "designerId": "43f019ff-e348-4bf1-899a-34c71a47ce99"
+                }
+            ]
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "designer|userClassName": "MyToolbar1"
+            },
+            "designerId": "f763d5a5-7e37-4ea4-a49d-f92dbab6e98e",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton2",
+                        "iconCls": "add",
+                        "text": "Add Something",
+                        "tooltip": [
+                            "Add a new row"
+                        ]
+                    },
+                    "designerId": "fe0807c0-0cce-4b3a-887b-f579363e6c41"
+                },
+                {
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MySeparator"
+                    },
+                    "designerId": "199be1cb-327a-418f-abbc-69585b13688f"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton3",
+                        "iconCls": "option",
+                        "text": "Options",
+                        "tooltip": [
+                            "Set options"
+                        ]
+                    },
+                    "designerId": "480ab629-d9c4-46bf-8145-897400d63e07"
+                },
+                {
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MySeparator1"
+                    },
+                    "designerId": "21fabde7-0e9d-4ebf-b79f-340de63a026a"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton4",
+                        "disabled": true,
+                        "itemId": "removeButton",
+                        "iconCls": "remove",
+                        "text": "Remove Something",
+                        "tooltip": [
+                            "Remove the selected item"
+                        ]
+                    },
+                    "designerId": "849b266b-f7dc-49ca-bd06-c7cc654ffb3a"
+                }
+            ]
+        }
+    ]
+}

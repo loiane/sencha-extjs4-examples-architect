@@ -1,0 +1,147 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GridRowNumberer",
+        "designer|userAlias": "grid3",
+        "height": 300,
+        "width": 600,
+        "animCollapse": false,
+        "collapsible": true,
+        "iconCls": "icon-grid",
+        "title": "Grid with Numbered Rows",
+        "columnLines": true,
+        "store": "Companies"
+    },
+    "id": "ExtBox1-ext-gen15323",
+    "designerId": "bdeafe43-10c0-4c73-a06e-3547c691a870",
+    "cn": [
+        {
+            "type": "rownumberer",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "RowNumberer"
+            },
+            "designerId": "4d4fa1b4-52ff-4e04-80cb-edf6cc1c076c"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn",
+                "dataIndex": "company",
+                "flex": 1,
+                "text": "Company"
+            },
+            "designerId": "e3dbc6d4-8fae-4402-8dd7-3b399f1b4bac"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn1",
+                "dataIndex": "price",
+                "text": "Price"
+            },
+            "designerId": "004ae04f-e377-4f9f-8f1c-db0176fd2801",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "renderer",
+                        "fn": "renderer",
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "implHandler": [
+                            "return Ext.util.Format.usMoney(value);"
+                        ]
+                    },
+                    "designerId": "6f200833-493c-493b-946d-929a130de3ad"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn3",
+                "dataIndex": "change",
+                "text": "Change"
+            },
+            "designerId": "455d0481-3cca-4ed1-9417-91976368e5e6"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn4",
+                "dataIndex": "pctChange",
+                "text": "% Change"
+            },
+            "designerId": "1cc2cb46-15bf-4285-aba8-40bd932a3f06"
+        },
+        {
+            "type": "datecolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyDateColumn",
+                "dataIndex": "lastChange",
+                "text": "Last Updated",
+                "format": "m/d/Y"
+            },
+            "designerId": "d0f41a9b-c558-416a-af16-24034e41fecb"
+        },
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView"
+            },
+            "designerId": "86482d23-e811-4fe8-8b2f-76676c480c3f"
+        }
+    ]
+}

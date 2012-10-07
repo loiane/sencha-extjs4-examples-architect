@@ -1,0 +1,62 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GridPlugins",
+        "models": [
+            "Company"
+        ],
+        "stores": [
+            "Companies"
+        ],
+        "views": [
+            "GridRowExpander",
+            "GridSelectionModel",
+            "GridRowNumberer",
+            "GridPanelToolbar"
+        ]
+    },
+    "id": "ExtBox1-ext-gen22443",
+    "designerId": "6abd39f5-67fd-40f2-a0bd-d378d3b18a97",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onGridpanelSelectionChange",
+                "fn": "onGridpanelSelectionChange",
+                "implHandler": [
+                    "this.getGrid4().down('#removeButton').setDisabled(selections.length == 0);"
+                ],
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.grid.Panel",
+                "designer|controlQuery": "grid4"
+            },
+            "designerId": "f3d16e22-9ace-49b1-91a5-2764236e2439"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "grid4",
+                "ref": "grid4",
+                "selector": "grid4",
+                "xtype": "grid4"
+            },
+            "designerId": "0833593a-1a22-4d5b-a9f7-f172cf917308"
+        }
+    ]
+}

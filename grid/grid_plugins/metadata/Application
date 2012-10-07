@@ -1,0 +1,68 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "requires": [
+            "Ext.ux.RowExpander"
+        ],
+        "name": "Sencha",
+        "controllers": [
+            "GridPlugins"
+        ]
+    },
+    "id": "ExtBox1-ext-gen1771",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "Loader48",
+                "enabled": true,
+                "paths": [
+                    "{",
+                    "    \"Ext\":\".\",",
+                    "     \"Ext.ux\": \"../../ux\"",
+                    "}"
+                ]
+            },
+            "designerId": "f6e330d0-c617-48f7-b0c8-0129c499d957"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "var bd = Ext.getBody();",
+                    "",
+                    "bd.createChild({tag: 'h1', html: 'Grid Plugins Examples'});",
+                    "",
+                    "bd.createChild({tag: 'p', html: 'This example demonstrates several plugins. Note that the js is not minified so it is readable.'});",
+                    "",
+                    "Ext.create('Sencha.view.GridRowExpander',{renderTo: bd});",
+                    "",
+                    "Ext.create('Sencha.view.GridSelectionModel',{renderTo: bd});",
+                    "",
+                    "Ext.create('Sencha.view.GridRowNumberer',{renderTo: bd});",
+                    "",
+                    "Ext.create('Sencha.view.GridPanelToolbar',{renderTo: bd});"
+                ]
+            },
+            "designerId": "26cba5ed-ab1b-4efd-89c8-e16213b21c4a"
+        }
+    ]
+}
