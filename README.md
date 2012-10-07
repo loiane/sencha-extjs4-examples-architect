@@ -7,8 +7,10 @@ Examples already implemented:
 * XML Grid
 * Panging Grid
 
-#Form:
+# Form:
 * Forum Search
+* Dynamic Forms
+* Registration Form
 
 # Tree:
 * Check Tree
