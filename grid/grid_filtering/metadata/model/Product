@@ -1,0 +1,98 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Product"
+    },
+    "id": "ExtBox1-ext-gen3675",
+    "designerId": "3dfa8fe6-569d-4374-9dd0-15beb27cfe83",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field",
+                "name": "id",
+                "type": "int"
+            },
+            "designerId": "5f0db037-d677-46c8-b194-2dee75e84016"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field1",
+                "name": "company"
+            },
+            "designerId": "e32c3935-c690-4439-97b5-bcf86d3fcd52"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "price",
+                "type": "float"
+            },
+            "designerId": "2aebcd7b-6540-40ac-b45f-8bb937d11daf"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field3",
+                "name": "date",
+                "dateFormat": "Y-m-d",
+                "type": "date"
+            },
+            "designerId": "41ff18c7-776b-421d-b3fd-b99e4d7be5d3"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field4",
+                "name": "visible",
+                "type": "boolean"
+            },
+            "designerId": "67a88bec-909d-4192-9ed0-42831d23d2e9"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field5",
+                "name": "size"
+            },
+            "designerId": "6b47f895-8876-4c72-adf5-fa09c1e4073c"
+        }
+    ]
+}

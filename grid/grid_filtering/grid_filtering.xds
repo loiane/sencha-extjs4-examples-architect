@@ -1,0 +1,107 @@
+{
+    "name": "grid_filtering",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 640,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "a194b011-9029-4543-9744-038c0147e926": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "8a890da8-a9de-4971-9cb5-595690f0aa8e": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "9ae0cee7-385e-4d30-851c-0db325ff5e8c": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
+        },
+        "0dfeedf7-f702-4a8f-a3f2-4d6a0f0d5aef": {
+            "paths": [
+                "metadata/resource/css2"
+            ],
+            "className": "css2"
+        },
+        "3dfa8fe6-569d-4374-9dd0-15beb27cfe83": {
+            "paths": [
+                "metadata/model/Product",
+                "app/model/override/Product.js",
+                "app/model/Product.js"
+            ],
+            "className": "Product"
+        },
+        "1ae6a46b-b4dc-4edb-bfd3-dfccd3a3196f": {
+            "paths": [
+                "metadata/store/Products",
+                "app/store/override/Products.js",
+                "app/store/Products.js"
+            ],
+            "className": "Products"
+        },
+        "b67c847b-5bcf-470b-86d2-1c5e351c54bf": {
+            "paths": [
+                "metadata/view/ProductGridPanel",
+                "app/view/override/ProductGridPanel.js",
+                "app/view/ProductGridPanel.js"
+            ],
+            "className": "ProductGridPanel"
+        },
+        "90dab45c-47cf-4fd3-9203-a0d297786842": {
+            "paths": [
+                "metadata/controller/MyController",
+                "app/controller/override/MyController.js",
+                "app/controller/MyController.js"
+            ],
+            "className": "MyController"
+        },
+        "1c1466f2-3d5a-4043-8f07-5fe6443c7308": {
+            "paths": [
+                "metadata/view/ProductWindow",
+                "app/view/override/ProductWindow.js",
+                "app/view/ProductWindow.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "ProductWindow"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "b67c847b-5bcf-470b-86d2-1c5e351c54bf",
+            "1c1466f2-3d5a-4043-8f07-5fe6443c7308"
+        ],
+        "store": [
+            "1ae6a46b-b4dc-4edb-bfd3-dfccd3a3196f"
+        ],
+        "controller": [
+            "90dab45c-47cf-4fd3-9203-a0d297786842"
+        ],
+        "model": [
+            "3dfa8fe6-569d-4374-9dd0-15beb27cfe83"
+        ],
+        "resource": [
+            "a194b011-9029-4543-9744-038c0147e926",
+            "8a890da8-a9de-4971-9cb5-595690f0aa8e",
+            "9ae0cee7-385e-4d30-851c-0db325ff5e8c",
+            "0dfeedf7-f702-4a8f-a3f2-4d6a0f0d5aef"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

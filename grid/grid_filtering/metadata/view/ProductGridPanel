@@ -1,0 +1,275 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ProductGridPanel",
+        "designer|userAlias": "productgridpanel",
+        "requires": [
+            "Ext.ux.grid.FiltersFeature"
+        ],
+        "border": false,
+        "height": 250,
+        "width": 400,
+        "title": null,
+        "store": "Products"
+    },
+    "id": "ExtBox1-ext-gen6565",
+    "designerId": "b67c847b-5bcf-470b-86d2-1c5e351c54bf",
+    "cn": [
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView"
+            },
+            "configAlternates": {
+                "loadMask": "boolean"
+            },
+            "designerId": "df3dc06d-d045-422a-914e-e390bdd35075"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "filterable": true,
+                "designer|userClassName": "MyColumn",
+                "width": 30,
+                "dataIndex": "id",
+                "text": "Id"
+            },
+            "configAlternates": {
+                "filterable": "boolean"
+            },
+            "designerId": "d75135df-e70f-48b8-9fdc-143942d09bbc",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "filterable",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "filter": [
+                    "{",
+                    "    type: 'string'",
+                    "}"
+                ],
+                "designer|userClassName": "MyColumn1",
+                "dataIndex": "company",
+                "flex": 1,
+                "text": "Company"
+            },
+            "configAlternates": {
+                "filter": "object"
+            },
+            "designerId": "fee9e0f7-e5b8-41d9-b7d4-e8a681c29666",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "filter",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "filter": [
+                    "{",
+                    "    //type: 'numeric'  // specify type here or in store fields config",
+                    "}"
+                ],
+                "designer|userClassName": "MyNumberColumn2",
+                "width": 70,
+                "dataIndex": "price",
+                "text": "Price"
+            },
+            "configAlternates": {
+                "filter": "object"
+            },
+            "designerId": "2d782016-8cab-4f1b-b825-02010e3243e9",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "filter",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "filter": [
+                    "{",
+                    "    type: 'list',",
+                    "    options: ['small', 'medium', 'large', 'extra large']",
+                    "}"
+                ],
+                "designer|userClassName": "MyColumn2",
+                "dataIndex": "size",
+                "text": "Size"
+            },
+            "configAlternates": {
+                "filter": "object"
+            },
+            "designerId": "a7b8c739-5bf8-42b6-9ec7-8ee420d4c7da",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "filter",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "pagingtoolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "designer|userClassName": "MyPagingToolbar",
+                "width": null,
+                "displayInfo": true,
+                "store": "Products"
+            },
+            "designerId": "dcaa0b2f-1e6c-4385-83e9-79baecb7133b",
+            "cn": [
+                {
+                    "type": "tbfill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyFill"
+                    },
+                    "designerId": "be2b6ddd-9f28-442e-9c2d-94cf943b25da"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton",
+                        "itemId": "encode",
+                        "enableToggle": true,
+                        "text": "Encode: Off",
+                        "tooltip": "Toggle Filter encoding on/off"
+                    },
+                    "configAlternates": {
+                        "tooltip": "string"
+                    },
+                    "designerId": "fcc570db-9b73-4aac-940b-7dacdb7c0a51"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton1",
+                        "itemId": "localFiltering",
+                        "enableToggle": true,
+                        "text": "Local Filtering: On",
+                        "tooltip": "Toggle Filtering between remote/local"
+                    },
+                    "configAlternates": {
+                        "tooltip": "string"
+                    },
+                    "designerId": "a0bb4751-b565-41b7-aea6-c9ea8e8eebc3"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton2",
+                        "itemId": "filterData",
+                        "text": "All Filter Data",
+                        "tooltip": "Get Filter Data for Grid"
+                    },
+                    "configAlternates": {
+                        "tooltip": "string"
+                    },
+                    "designerId": "4b5807f1-846e-4646-a4d3-cd8482100fd5"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton3",
+                        "itemId": "clearFilter",
+                        "text": "Clear Filter Data"
+                    },
+                    "designerId": "699b6c35-9a48-4767-aeae-01e45b46cf00"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton4",
+                        "itemId": "addColumns",
+                        "text": "Add Columns"
+                    },
+                    "designerId": "9631a3c5-39c3-4a1c-97c2-f63b415185e7"
+                }
+            ]
+        }
+    ]
+}

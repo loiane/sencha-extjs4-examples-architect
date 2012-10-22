@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "../../ux/grid/css/RangeMenu.css"
+    },
+    "id": "ExtBox1-ext-gen2607",
+    "designerId": "0dfeedf7-f702-4a8f-a3f2-4d6a0f0d5aef"
+}

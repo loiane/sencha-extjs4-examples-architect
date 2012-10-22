@@ -1,0 +1,32 @@
+{
+    "type": "window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ProductWindow",
+        "designer|userAlias": "productwindow",
+        "designer|initialView": true,
+        "autoShow": true,
+        "height": 400,
+        "width": 700,
+        "layout": "fit",
+        "title": "Grid Filters Example"
+    },
+    "id": "ExtBox1-ext-gen13955",
+    "designerId": "1c1466f2-3d5a-4043-8f07-5fe6443c7308",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "221f30b2-ac88-4842-b58f-b22cf6764691",
+            "masterInstanceId": "ExtBox1-ext-gen6565"
+        }
+    ]
+}

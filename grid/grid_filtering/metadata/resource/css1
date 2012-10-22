@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "../../ux/grid/css/GridFilters.css"
+    },
+    "id": "ExtBox1-ext-gen2400",
+    "designerId": "9ae0cee7-385e-4d30-851c-0db325ff5e8c"
+}

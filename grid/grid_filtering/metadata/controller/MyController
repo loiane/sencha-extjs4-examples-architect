@@ -1,0 +1,209 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController",
+        "models": [
+            "Product"
+        ],
+        "stores": [
+            "Products"
+        ],
+        "views": [
+            "ProductGridPanel",
+            "ProductWindow"
+        ]
+    },
+    "id": "ExtBox1-ext-gen12965",
+    "designerId": "90dab45c-47cf-4fd3-9203-a0d297786842",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "this.getProductsStore().load();"
+                ]
+            },
+            "designerId": "3a078391-a6f6-4aeb-b933-5e3aafe154b8"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onEncodeButtonClick",
+                "fn": "onEncodeButtonClick",
+                "implHandler": [
+                    "var grid = this.getProductGridPanel();",
+                    "",
+                    "var encode = (grid.filters.encode !== true);",
+                    "var text = 'Encode: ' + (encode ? 'On' : 'Off'); ",
+                    "",
+                    "grid.filters.encode = encode;",
+                    "grid.filters.reload();",
+                    "button.setText(text);"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "productgridpanel toolbar button[itemId=encode]"
+            },
+            "designerId": "e818ba84-e6c8-4ebd-8273-0d4b6b9ee8f8"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "productGridPanel",
+                "ref": "productGridPanel",
+                "selector": "productgridpanel",
+                "xtype": "gridpanel"
+            },
+            "designerId": "177a629c-7789-422b-8d96-b5d76ba3d0b6"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onLocalFilteringButtonClick",
+                "fn": "onLocalFilteringButtonClick",
+                "implHandler": [
+                    "var url = {",
+                    "    local:  'grid-filter.json',  // static data file",
+                    "    remote: 'grid-filter.php'",
+                    "};",
+                    "",
+                    "var grid = this.getProductGridPanel();",
+                    "",
+                    "var local = (grid.filters.local !== true),",
+                    "    text = 'Local Filtering: ' + (local ? 'On' : 'Off'),",
+                    "    newUrl = local ? url.local : url.remote,",
+                    "    store = grid.view.getStore();",
+                    " ",
+                    "// update the GridFilter setting",
+                    "grid.filters.local = local;",
+                    "// bind the store again so GridFilters is listening to appropriate store event",
+                    "grid.filters.bindStore(store);",
+                    "// update the url for the proxy",
+                    "store.proxy.url = newUrl;",
+                    "",
+                    "button.setText(text);",
+                    "store.load();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "productgridpanel toolbar button[itemId=localFiltering]"
+            },
+            "designerId": "2b5907e9-e7db-4509-8847-378ceb0e2674"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onFilterDataButtonClick",
+                "fn": "onFilterDataButtonClick",
+                "implHandler": [
+                    "var grid = this.getProductGridPanel();",
+                    "",
+                    "var data = Ext.encode(grid.filters.getFilterData());",
+                    "",
+                    "Ext.Msg.alert('All Filter Data',data);"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "productgridpanel toolbar button[itemId=filterData]"
+            },
+            "designerId": "f66ea65c-eeae-4cf8-b23d-da97aa5afc34"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onClearFilterButtonClick",
+                "fn": "onClearFilterButtonClick",
+                "implHandler": [
+                    "var grid = this.getProductGridPanel();",
+                    "",
+                    "grid.filters.clearFilters();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "productgridpanel toolbar button[itemId=clearFilter]"
+            },
+            "designerId": "b8855cef-eaff-4942-9040-a2d939498619"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onAddColumnsButtonClick",
+                "fn": "onAddColumnsButtonClick",
+                "implHandler": [
+                    "var grid = this.getProductGridPanel();",
+                    "",
+                    "var columns = [{",
+                    "    dataIndex: 'date',",
+                    "    text: 'Date',",
+                    "    filter: true,",
+                    "    renderer: Ext.util.Format.dateRenderer('m/d/Y')",
+                    "}, {",
+                    "    dataIndex: 'visible',",
+                    "    text: 'Visible'",
+                    "    // this column's filter is defined in the filters feature config",
+                    "}];",
+                    "",
+                    "if (grid.headerCt.items.length < 6) {",
+                    "    grid.headerCt.add(columns);",
+                    "    grid.view.refresh();",
+                    "    button.disable();",
+                    "}"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "productgridpanel toolbar button[itemId=addColumns]"
+            },
+            "designerId": "23fe5fef-8497-40d0-8769-d5279e0a54b2"
+        }
+    ]
+}

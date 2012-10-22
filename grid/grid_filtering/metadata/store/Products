@@ -1,0 +1,72 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoDestroy": true,
+        "designer|userClassName": "Products",
+        "storeId": "Products",
+        "model": "Product",
+        "pageSize": 50
+    },
+    "configAlternates": {
+        "autoDestroy": "boolean"
+    },
+    "id": "ExtBox1-ext-gen5159",
+    "designerId": "1ae6a46b-b4dc-4edb-bfd3-dfccd3a3196f",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "autoDestroy",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "url": "data/grid-filter.json"
+            },
+            "designerId": "56fd3a5e-48b9-4756-b792-12a0d2d2953d",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader",
+                        "idProperty": "id",
+                        "root": "data"
+                    },
+                    "designerId": "ae4fc701-f28b-4140-88fc-d948dba4790a"
+                }
+            ]
+        },
+        {
+            "type": "sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MySorter",
+                "designer|displayName": "companySorter",
+                "property": "company"
+            },
+            "designerId": "c0d0329a-c015-4bd9-845b-f552ff1cda9a"
+        }
+    ]
+}
