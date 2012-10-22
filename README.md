@@ -6,6 +6,7 @@ Examples already implemented:
 * Array Grid
 * XML Grid
 * Panging Grid
+* Grid Filtering
 
 # Form:
 * Forum Search
