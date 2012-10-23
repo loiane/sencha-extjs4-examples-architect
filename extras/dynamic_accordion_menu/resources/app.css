@@ -1,0 +1,88 @@
+body {
+    padding:20px;
+    padding-top:32px;
+}
+.home{
+	background-image:url(images/application_home);
+}
+.key {
+    background-image:url(images/bullet_key.png);
+}
+.computer {
+    background-image:url(images/computer.png);
+}
+.chart_bar {
+    background-image:url(images/chart_bar.png);
+}
+.chart_curve {
+    background-image:url(images/chart_curve.png);
+}
+.chart_org {
+    background-image:url(images/chart_organisation.png);
+}
+.chart_pie {
+    background-image:url(images/chart_pie.png);
+}
+.folder_user {
+    background-image:url(images/folder_user.png);
+}
+.user_female {
+    background-image:url(images/user_female.png);
+}
+.user_gray {
+    background-image:url(images/user_gray.png);
+}
+.user_green {
+    background-image:url(images/user_green.png);
+}
+.user_orange {
+    background-image:url(images/user_orange.png);
+}
+.user_red {
+    background-image:url(images/user_red.png);
+}
+.user_suit {
+    background-image:url(images/user_suit.png);
+}
+.user {
+    background-image:url(images/user.png);
+}
+.table {
+    background-image:url(images/table.png);
+}
+.tag_blue {
+    background-image:url(images/tag_blue.png);
+}
+.tag_green {
+    background-image:url(images/tag_green.png);
+}
+.tag_orange {
+    background-image:url(images/tag_orange.png);
+}
+.tag_pink {
+    background-image:url(images/tag_pink.png);
+}
+.tag_purple {
+    background-image:url(images/tag_purple.png);
+}
+.tag_red {
+    background-image:url(images/tag_red.png);
+}
+.tag_yellow {
+    background-image:url(images/tag_yellow.png);
+}
+.money {
+    background-image:url(images/money.png);
+}
+.money_dollar {
+    background-image:url(images/money_dollar.png);
+}
+.money_euro {
+    background-image:url(images/money_euro.png);
+}
+.money_pound {
+    background-image:url(images/money_pound.png);
+}
+.money_yen {
+    background-image:url(images/money_yen.png);
+}

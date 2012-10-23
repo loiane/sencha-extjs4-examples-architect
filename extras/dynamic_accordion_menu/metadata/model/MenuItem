@@ -1,0 +1,95 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MenuItem",
+        "idProperty": "id"
+    },
+    "id": "ExtBox1-ext-gen6028",
+    "designerId": "74eb3117-9dcf-4735-9530-40712802aa3f",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "text"
+            },
+            "designerId": "891cffa7-ee95-4905-a2bf-d1bcaebcbfe1"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field3",
+                "name": "iconCls"
+            },
+            "designerId": "8f40eef8-46e5-40be-a70d-3b8705ecd8f6"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field4",
+                "name": "className"
+            },
+            "designerId": "3095aa7e-a8b1-4bb3-92d5-dd03024d161c"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field5",
+                "name": "id"
+            },
+            "designerId": "c6f7edbe-8eec-44b4-aa50-4caba033d43b"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field8",
+                "name": "menu_id"
+            },
+            "designerId": "d4d4cfce-10de-4274-b6f4-a5bd6c0df32f"
+        },
+        {
+            "type": "belongstoassociation",
+            "reference": {
+                "name": "belongsTo",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyBelongsToAssociation",
+                "model": "MenuRoot",
+                "foreignKey": "menu_id"
+            },
+            "designerId": "bfd043d5-a055-4c5d-9f38-c11068f4cb0a"
+        }
+    ]
+}

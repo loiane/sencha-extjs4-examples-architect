@@ -1,0 +1,21 @@
+{
+    "type": "treepanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MenuItem",
+        "designer|userAlias": "menuitem",
+        "border": 0,
+        "height": null,
+        "width": null,
+        "autoScroll": true,
+        "title": "",
+        "root": null,
+        "rootVisible": false
+    },
+    "id": "ExtBox1-ext-gen11018",
+    "designerId": "c197c749-4484-4347-ab9d-0125b9990d96"
+}

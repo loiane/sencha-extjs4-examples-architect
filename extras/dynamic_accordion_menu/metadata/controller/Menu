@@ -1,0 +1,94 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Menu",
+        "models": [
+            "MenuRoot",
+            "MenuItem"
+        ],
+        "stores": [
+            "Menu"
+        ],
+        "views": [
+            "Menu",
+            "MenuItem"
+        ]
+    },
+    "id": "ExtBox1-ext-gen4468",
+    "designerId": "99216a6c-f8f1-460a-9d74-eea7eb2fcc15",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onPanelRender",
+                "fn": "onPanelRender",
+                "implHandler": [
+                    "this.getMenuStore().load(function(records, op, success){",
+                    "",
+                    "    var menuPanel = Ext.ComponentQuery.query('menu')[0];",
+                    "",
+                    "    Ext.each(records, function(root){",
+                    "",
+                    "        var menu = Ext.create('Sencha.view.MenuItem',{",
+                    "            title: root.get('title'),",
+                    "            iconCls: root.get('iconCls')",
+                    "        });",
+                    "",
+                    "        Ext.each(root.items(), function(itens){",
+                    "",
+                    "            Ext.each(itens.data.items, function(item){",
+                    "",
+                    "                menu.getRootNode().appendChild({",
+                    "                    text: item.get('text'), ",
+                    "                    leaf: true, ",
+                    "                    iconCls: item.get('iconCls'),",
+                    "                    id: item.get('id'),",
+                    "                    className: item.get('className') ",
+                    "                });",
+                    "            });  ",
+                    "        });",
+                    "",
+                    "        menuPanel.add(menu);",
+                    "    }); ",
+                    "});"
+                ],
+                "name": "render",
+                "scope": "me",
+                "designer|targetType": "Ext.panel.Panel",
+                "designer|controlQuery": "menu"
+            },
+            "designerId": "51b01e04-2abd-4f98-989a-4612ce39a80b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onTreepanelSelect",
+                "fn": "onTreepanelSelect",
+                "implHandler": [
+                    "Ext.Msg.alert('You selected the following menu item', record.get('text'));",
+                    ""
+                ],
+                "name": "select",
+                "scope": "me",
+                "designer|targetType": "Ext.tree.Panel",
+                "designer|controlQuery": "treepanel"
+            },
+            "designerId": "ce57d397-a5fd-481f-a017-ef4db9dfd89d"
+        }
+    ]
+}

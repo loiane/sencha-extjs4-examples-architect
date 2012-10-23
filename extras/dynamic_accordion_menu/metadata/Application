@@ -1,0 +1,17 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoCreateViewport": true,
+        "name": "Sencha",
+        "controllers": [
+            "Menu"
+        ]
+    },
+    "id": "ExtBox1-ext-gen1736",
+    "designerId": "application"
+}

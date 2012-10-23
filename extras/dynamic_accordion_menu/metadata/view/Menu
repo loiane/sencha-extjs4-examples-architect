@@ -1,0 +1,20 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Menu",
+        "designer|userAlias": "menu",
+        "designer|initialView": true,
+        "height": 432,
+        "width": 251,
+        "layout": "accordion",
+        "iconCls": "home",
+        "title": "Menu"
+    },
+    "id": "ExtBox1-ext-gen2057",
+    "designerId": "5bb3cbc9-87d8-4318-8906-070e936813e6"
+}

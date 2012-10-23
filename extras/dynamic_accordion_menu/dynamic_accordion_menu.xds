@@ -1,0 +1,102 @@
+{
+    "name": "dynamic_accordion_menu",
+    "settings": {
+        "urlPrefix": "http://loiane.local/extjs4-mvc-examples/dynamic_accordion_menu/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 640,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "5bb3cbc9-87d8-4318-8906-070e936813e6": {
+            "paths": [
+                "metadata/view/Menu",
+                "app/view/override/Menu.js",
+                "app/view/Menu.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "Menu"
+        },
+        "089ff779-f9cf-4690-964d-33d04bd74b0f": {
+            "paths": [
+                "metadata/store/Menu",
+                "app/store/override/Menu.js",
+                "app/store/Menu.js"
+            ],
+            "className": "Menu"
+        },
+        "99216a6c-f8f1-460a-9d74-eea7eb2fcc15": {
+            "paths": [
+                "metadata/controller/Menu",
+                "app/controller/override/Menu.js",
+                "app/controller/Menu.js"
+            ],
+            "className": "Menu"
+        },
+        "37962c3b-b229-43e0-86e5-4db0acca463d": {
+            "paths": [
+                "metadata/model/MenuRoot",
+                "app/model/override/MenuRoot.js",
+                "app/model/MenuRoot.js"
+            ],
+            "className": "MenuRoot"
+        },
+        "74eb3117-9dcf-4735-9530-40712802aa3f": {
+            "paths": [
+                "metadata/model/MenuItem",
+                "app/model/override/MenuItem.js",
+                "app/model/MenuItem.js"
+            ],
+            "className": "MenuItem"
+        },
+        "d91b302e-3bb4-49ef-9773-a7f659a961b6": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "c197c749-4484-4347-ab9d-0125b9990d96": {
+            "paths": [
+                "metadata/view/MenuItem",
+                "app/view/override/MenuItem.js",
+                "app/view/MenuItem.js"
+            ],
+            "className": "MenuItem"
+        },
+        "70aafa0f-63dd-4bea-a6f8-faa13f8d47bc": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "5bb3cbc9-87d8-4318-8906-070e936813e6",
+            "c197c749-4484-4347-ab9d-0125b9990d96"
+        ],
+        "store": [
+            "089ff779-f9cf-4690-964d-33d04bd74b0f"
+        ],
+        "controller": [
+            "99216a6c-f8f1-460a-9d74-eea7eb2fcc15"
+        ],
+        "model": [
+            "37962c3b-b229-43e0-86e5-4db0acca463d",
+            "74eb3117-9dcf-4735-9530-40712802aa3f"
+        ],
+        "resource": [
+            "d91b302e-3bb4-49ef-9773-a7f659a961b6",
+            "70aafa0f-63dd-4bea-a6f8-faa13f8d47bc"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
