@@ -1,0 +1,93 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "splashscreen": [
+            "{}"
+        ],
+        "name": "MyApp"
+    },
+    "configAlternates": {
+        "splashscreen": "object"
+    },
+    "id": "ExtBox1-ext-gen1770",
+    "designerId": "application",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "splashscreen",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "// Setup a task to fadeOut the splashscreen",
+                    "var task = new Ext.util.DelayedTask(function() {",
+                    "    ",
+                    "    // Fade out the body mask",
+                    "    splashscreen.fadeOut({",
+                    "        duration: 1000,",
+                    "        remove:true",
+                    "    });",
+                    "    ",
+                    "    // Fade out the icon and message",
+                    "    splashscreen.next().fadeOut({",
+                    "        duration: 1000,",
+                    "        remove:true,",
+                    "        listeners: {",
+                    "            afteranimate: function() {",
+                    "                // Set the body as unmasked after the animation",
+                    "                Ext.getBody().unmask();",
+                    "            }",
+                    "        }",
+                    "    });",
+                    "});",
+                    "",
+                    "// Run the fade 2000 milliseconds after launch.",
+                    "task.delay(2000);"
+                ]
+            },
+            "designerId": "5515b1a1-1c63-41b8-ac28-4d8c1cc5ae88"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "implHandler": [
+                    "",
+                    "// Start the mask on the body and get a reference to the mask",
+                    "splashscreen = Ext.getBody().mask('Loading application', 'splashscreen');",
+                    "",
+                    "// Add a new class to this mask as we want it to look different from the default.",
+                    "splashscreen.addCls('splashscreen');",
+                    "",
+                    "// Insert a new div before the loading icon where we can place our logo.",
+                    "Ext.DomHelper.insertFirst(Ext.query('.x-mask-msg')[0], {",
+                    "    cls: 'x-splash-icon'",
+                    "});"
+                ]
+            },
+            "designerId": "78e92851-63e2-40f5-98a2-269e35755f8f"
+        }
+    ]
+}

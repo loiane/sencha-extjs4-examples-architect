@@ -1,0 +1,43 @@
+{
+    "name": "splash_screen",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 640,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "e9d305b0-3be1-48ae-9ed1-c061e61921bf": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "c5ce6d09-3c2b-4f28-957b-32e6d5facafd": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        }
+    },
+    "viewOrderMap": {
+        "view": [],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "e9d305b0-3be1-48ae-9ed1-c061e61921bf",
+            "c5ce6d09-3c2b-4f28-957b-32e6d5facafd"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
