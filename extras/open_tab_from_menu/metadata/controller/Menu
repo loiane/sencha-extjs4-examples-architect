@@ -1,0 +1,123 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "MenuRoot",
+            "MenuItem"
+        ],
+        "stores": [
+            "Menu"
+        ],
+        "views": [
+            "Menu",
+            "MenuItem"
+        ],
+        "designer|userClassName": "Menu"
+    },
+    "designerId": "99216a6c-f8f1-460a-9d74-eea7eb2fcc15",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onPanelRender",
+                "implHandler": [
+                    "this.getMenuStore().load(function(records, op, success){",
+                    "",
+                    "    var menuPanel = Ext.ComponentQuery.query('menu')[0];",
+                    "",
+                    "    Ext.each(records, function(root){",
+                    "",
+                    "        var menu = Ext.create('Sencha.view.MenuItem',{",
+                    "            title: root.get('title'),",
+                    "            iconCls: root.get('iconCls')",
+                    "        });",
+                    "",
+                    "        Ext.each(root.items(), function(itens){",
+                    "",
+                    "            Ext.each(itens.data.items, function(item){",
+                    "",
+                    "                menu.getRootNode().appendChild({",
+                    "                    text: item.get('text'), ",
+                    "                    leaf: true, ",
+                    "                    iconCls: item.get('iconCls'),",
+                    "                    id: item.get('id'),",
+                    "                    className: item.get('className') ",
+                    "                });",
+                    "            });  ",
+                    "        });",
+                    "",
+                    "        menuPanel.add(menu);",
+                    "    }); ",
+                    "});"
+                ],
+                "name": "render",
+                "scope": "me",
+                "designer|targetType": "Ext.panel.Panel",
+                "designer|controlQuery": "menu"
+            },
+            "designerId": "51b01e04-2abd-4f98-989a-4612ce39a80b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTreepanelSelect",
+                "implHandler": [
+                    "//Ext.Msg.alert('You selected the following menu item', record.get('text'));",
+                    "console.log(record.raw.className);",
+                    "var mainPanel = this.getMainPanel();",
+                    "",
+                    "var newTab = mainPanel.items.findBy(",
+                    "\tfunction (tab){ ",
+                    "    \treturn tab.title === record.get('text'); ",
+                    "    }",
+                    ");",
+                    "",
+                    "if (!newTab){",
+                    "    newTab = mainPanel.add({",
+                    "        xtype: record.raw.className,",
+                    "        closable: true,",
+                    "        iconCls: record.get('iconCls'),",
+                    "        title: record.get('text')",
+                    "    });",
+                    "}",
+                    "",
+                    "mainPanel.setActiveTab(newTab);"
+                ],
+                "name": "select",
+                "scope": "me",
+                "designer|targetType": "Ext.tree.Panel",
+                "designer|controlQuery": "treepanel"
+            },
+            "designerId": "ce57d397-a5fd-481f-a017-ef4db9dfd89d"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainPanel",
+                "selector": "myviewport #mainPanel",
+                "xtype": "Ext.tab.Panel"
+            },
+            "designerId": "e5f91855-0995-4f17-8631-e4f2e48e820d"
+        }
+    ]
+}

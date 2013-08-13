@@ -1,0 +1,18 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 432,
+        "width": 251,
+        "designer|userClassName": "Menu",
+        "designer|userAlias": "menu",
+        "layout": "accordion",
+        "iconCls": "home",
+        "title": "Menu"
+    },
+    "designerId": "5bb3cbc9-87d8-4318-8906-070e936813e6"
+}

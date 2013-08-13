@@ -1,0 +1,20 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "MyViewport",
+            "MyForm"
+        ],
+        "autoCreateViewport": true,
+        "controllers": [
+            "Menu"
+        ],
+        "name": "Sencha"
+    },
+    "designerId": "application"
+}

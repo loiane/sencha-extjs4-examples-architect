@@ -1,0 +1,20 @@
+{
+    "type": "Ext.tree.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "border": 0,
+        "height": null,
+        "width": null,
+        "designer|userClassName": "MenuItem",
+        "designer|userAlias": "menuitem",
+        "autoScroll": true,
+        "title": "",
+        "root": null,
+        "rootVisible": false
+    },
+    "designerId": "c197c749-4484-4347-ab9d-0125b9990d96"
+}

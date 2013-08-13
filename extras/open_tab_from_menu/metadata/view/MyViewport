@@ -1,0 +1,72 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemId": "myviewport",
+        "designer|userClassName": "MyViewport",
+        "designer|userAlias": "myviewport",
+        "designer|initialView": true,
+        "layout": "border"
+    },
+    "designerId": "8c6df8ec-2c91-47a3-920d-c07154727816",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "itemId": "mainPanel",
+                "activeTab": 0
+            },
+            "designerId": "2400dd3a-bd4d-405c-9f93-024c40d10e1c",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Home"
+                    },
+                    "designerId": "4e2f47cd-420d-43d7-9354-5ec107c39eba",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "3a4ed83f-d5b3-4f34-9b72-3f83bb6b0a5c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 200,
+                "collapsible": true,
+                "layout|region": "west"
+            },
+            "designerId": "e71784b5-1336-45e1-a2e2-b392dc1f8478",
+            "masterInstanceId": "5bb3cbc9-87d8-4318-8906-070e936813e6"
+        }
+    ]
+}

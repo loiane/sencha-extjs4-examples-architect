@@ -1,0 +1,86 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 250,
+        "width": 400,
+        "designer|userClassName": "MyForm",
+        "designer|userAlias": "myform",
+        "bodyPadding": 10,
+        "title": "My Form"
+    },
+    "designerId": "ede3b96e-595b-4de5-a07b-b3c874b3a1f1",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "fieldLabel": "Label"
+            },
+            "designerId": "28f9a675-1e5b-4f03-8102-4d324e0f4781"
+        },
+        {
+            "type": "Ext.form.field.TextArea",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "fieldLabel": "Label"
+            },
+            "designerId": "25d6a3f2-850d-4670-acad-343ecd0a7904"
+        },
+        {
+            "type": "Ext.form.field.Radio",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "fieldLabel": "Label",
+                "boxLabel": "Box Label"
+            },
+            "designerId": "1584066f-b207-439f-91c4-c8d30fc860e5"
+        },
+        {
+            "type": "Ext.form.field.Number",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "fieldLabel": "Label"
+            },
+            "designerId": "10d29eac-f12b-4fba-a265-2fe7fda52427"
+        },
+        {
+            "type": "Ext.form.field.HtmlEditor",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "height": 150,
+                "fieldLabel": "Label"
+            },
+            "designerId": "2c6b1cc6-d18e-4e19-89dd-bd9e2246e470"
+        }
+    ]
+}
