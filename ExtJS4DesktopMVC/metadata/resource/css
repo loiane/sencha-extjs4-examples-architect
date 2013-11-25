@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css",
+        "url": "resources/css/desktop.css"
+    },
+    "designerId": "28afe8ff-68da-4daa-a7b2-dbca2a698f3a"
+}

@@ -1,0 +1,60 @@
+{
+    "name": "ExtJS4DesktopMVC",
+    "settings": {
+        "cmd": {
+            "license": "gpl",
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "4.2.1.883"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost/blog/ExtJS4DesktopMVC/",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "license": "gpl",
+        "customPath": ""
+    },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 1337,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000003,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "80d6364b-6f11-43ab-aaff-4d375d9fac25",
+            "b4af3bb1-a399-4d6e-b460-c44c2d5a2e2b",
+            "120977e5-cca1-43a5-8d17-89d25283688b"
+        ],
+        "store": [
+            "37846f52-7418-4054-a6e8-1f83d9764b7f"
+        ],
+        "controller": [
+            "b5187848-9079-49fd-b816-17660809ae24",
+            "5eeccf54-31a1-4e57-828c-d5d13d8f9c71"
+        ],
+        "model": [
+            "87700540-c787-43af-8bd9-ec7c603cb8a0"
+        ],
+        "resource": [
+            "b4dcb173-23de-45fd-9ab7-6b27d91f68e4",
+            "ba50af8e-5a71-47bf-b574-0710c09dec66",
+            "28afe8ff-68da-4daa-a7b2-dbca2a698f3a",
+            "77d66f17-c18b-4fa7-a98f-97ae7b83a5db"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

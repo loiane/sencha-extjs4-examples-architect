@@ -1,0 +1,17 @@
+{
+   "name": "ExtDesktop",
+   "requires": [],
+   "id": "753a35be-e9d9-4285-b372-e77024169a40",
+   "resources": [
+      "resources/css/desktop.css",
+      "resources/css/company.css"
+   ],
+   "_architect": {
+      "_comment": "Please don't edit. This is Architect data.",
+      "resources": [
+         "resources/css/desktop.css",
+         "resources/css/company.css"
+      ],
+      "requires": []
+   }
+}

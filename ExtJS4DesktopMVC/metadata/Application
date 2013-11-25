@@ -1,0 +1,38 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "Desktop",
+            "Company"
+        ],
+        "name": "ExtDesktop",
+        "requires": [
+            "ExtDesktop.view.Desktop",
+            "Ext.grid.column.Date",
+            "Ext.grid.column.Action"
+        ]
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "Ext.Loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "enabled": true,
+                "paths": [
+                    "{\"Ext.ux.desktop\": \"./desktop\"}"
+                ]
+            },
+            "designerId": "a51a77f3-202c-4280-a1d3-7692d0480904"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Desktop"
+    },
+    "designerId": "b5187848-9079-49fd-b816-17660809ae24",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLaunch",
+                "implHandler": [
+                    "myDesktopApp = Ext.create('ExtDesktop.view.Desktop');"
+                ]
+            },
+            "designerId": "8974e1a6-42a1-43c2-a036-990c6939eabe"
+        }
+    ]
+}

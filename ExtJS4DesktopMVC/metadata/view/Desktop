@@ -1,0 +1,199 @@
+{
+    "type": "class",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mydesktop",
+        "designer|userClassName": "Desktop",
+        "extend": "Ext.ux.desktop.App",
+        "requires": [
+            "Ext.window.MessageBox",
+            "Ext.ux.desktop.ShortcutModel"
+        ]
+    },
+    "designerId": "80d6364b-6f11-43ab-aaff-4d375d9fac25",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "implHandler": [
+                    "this.callParent();"
+                ]
+            },
+            "designerId": "4510c4d2-3779-4b8f-ad4b-2ee079fcd167"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSettings",
+                "implHandler": [
+                    "Ext.widget('window',{",
+                    "    title: 'Settings',",
+                    "    width: 200,",
+                    "    height: 200",
+                    "}).show();"
+                ]
+            },
+            "designerId": "caf36632-1465-4644-b1f3-d5204a8d63ca"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getModules",
+                "implHandler": [
+                    "var priv = {",
+                    "    modules:[",
+                    "        'ExtDesktop.view.module.Company'",
+                    "        ],",
+                    "    shortcuts:[{ name: 'Companies List', iconCls: 'grid-shortcut', module: 'company-win' }]",
+                    "};",
+                    "",
+                    "var modules = priv.modules;",
+                    "",
+                    "var modulesAux = [];",
+                    "",
+                    "Ext.each(modules, function(item) {",
+                    "    modulesAux.push(Ext.create(item));",
+                    "}, this);",
+                    "",
+                    "return modulesAux;"
+                ]
+            },
+            "designerId": "641a554c-d6b0-46f3-8fe0-2d7399b8c109"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getDesktopConfig",
+                "implHandler": [
+                    "var me = this, ret = me.callParent();",
+                    "",
+                    "var priv = {",
+                    "    modules:[",
+                    "        'ExtDesktop.view.module.Company'",
+                    "        ],",
+                    "    shortcuts:[{ name: 'Companies List', iconCls: 'grid-shortcut', module: 'company-win' }]",
+                    "};",
+                    "",
+                    "return Ext.apply(ret, {",
+                    "",
+                    "    contextMenuItems: [",
+                    "        { text: 'Change Settings', handler: me.onSettings, scope: me }",
+                    "    ],",
+                    "",
+                    "    shortcuts: Ext.create('Ext.data.Store', {",
+                    "        model: 'Ext.ux.desktop.ShortcutModel',",
+                    "        data: priv.shortcuts",
+                    "    }),",
+                    "",
+                    "    wallpaper: 'resources/wallpapers/Blue-Sencha.jpg',",
+                    "    wallpaperStretch: false",
+                    "});"
+                ]
+            },
+            "designerId": "9c7e06b6-d24e-438f-8b28-6eddd488c5b7"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getStartConfig",
+                "implHandler": [
+                    "var me = this, ret = me.callParent();",
+                    "",
+                    "return Ext.apply(ret, {",
+                    "    title: 'Loiane Groner',",
+                    "    iconCls: 'user',",
+                    "    height: 300,",
+                    "    toolConfig: {",
+                    "        width: 100,",
+                    "        items: [",
+                    "            {",
+                    "                text:'Settings',",
+                    "                iconCls:'settings',",
+                    "                handler: me.onSettings,",
+                    "                scope: me",
+                    "            },",
+                    "            '-',",
+                    "            {",
+                    "                text:'Logout',",
+                    "                iconCls:'logout',",
+                    "                handler: me.onLogout,",
+                    "                scope: me",
+                    "            }",
+                    "        ]",
+                    "    }",
+                    "});"
+                ]
+            },
+            "designerId": "c33a2fcc-f429-4c5e-89ee-83875e38af7b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getTaskbarConfig",
+                "implHandler": [
+                    "var ret = this.callParent();",
+                    "",
+                    "return Ext.apply(ret, {",
+                    "    quickStart: [",
+                    "        { name: 'Grid Window', iconCls: 'icon-grid', module: 'company-win' }",
+                    "    ],",
+                    "    trayItems: [",
+                    "        { xtype: 'trayclock', flex: 1 }",
+                    "    ]",
+                    "});"
+                ]
+            },
+            "designerId": "714632d4-c90d-4c52-bacf-161d22d36834"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLogout",
+                "implHandler": [
+                    "Ext.Msg.confirm('Logout', 'Are you sure you want to logout?');"
+                ]
+            },
+            "designerId": "de6a0070-8409-4519-aff2-50c7bb5623bf"
+        }
+    ]
+}

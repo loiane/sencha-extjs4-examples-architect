@@ -1,0 +1,73 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Company",
+        "models": [
+            "Company"
+        ],
+        "stores": [
+            "Companies"
+        ],
+        "views": [
+            "CompanyGrid"
+        ]
+    },
+    "designerId": "5eeccf54-31a1-4e57-828c-d5d13d8f9c71",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "init",
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "e50c94dd-ee79-44cf-addd-f2f751a491f3"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "companygrid actioncolumn",
+                "designer|params": [
+                    "column",
+                    "action",
+                    "view",
+                    "rowIndex",
+                    "colIndex",
+                    "item",
+                    "e"
+                ],
+                "fn": "handleActionColumn",
+                "implHandler": [
+                    "var rec = view.getStore().getAt(rowIndex);",
+                    "if (action == 'sell'){",
+                    "    Ext.Msg.alert('', \"Sell \" + rec.get('company'));",
+                    "} else {",
+                    "    Ext.Msg.alert('', (rec.get('change') < 0 ? \"Hold \" : \"Buy \") + rec.get('company'));",
+                    "}"
+                ],
+                "name": "itemclick",
+                "scope": "me"
+            },
+            "designerId": "a2a63c55-061d-4b70-a18c-64968bb38c62"
+        }
+    ]
+}

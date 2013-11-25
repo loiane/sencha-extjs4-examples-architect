@@ -1,0 +1,13 @@
+{
+    "name": "ext-theme-classic-ba50af8e-5a71-47bf-b574-0710c09dec66",
+    "type": "theme",
+    "creator": "Architect",
+    "summary": "Architect created theme. Edit through Architect. Manual edits here will likly be discarded.",
+    "detailedDescription": "Architect created theme. Edit through Architect. Manual edits here will likly be discarded.",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "local": true,
+    "requires": [],
+    "extend": "ext-theme-classic"
+}

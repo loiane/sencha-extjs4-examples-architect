@@ -16,6 +16,9 @@ Examples already implemented:
 # Tree:
 * Check Tree
 
+# Desktop: (Nov-25-2013)
+* Web Desktop - simplified
+
 # Extras (non Sencha examples):
 Unique Field Validation (Server validation)
 

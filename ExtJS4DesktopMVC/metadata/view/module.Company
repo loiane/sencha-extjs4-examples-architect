@@ -1,0 +1,79 @@
+{
+    "type": "class",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "module.Company",
+        "extend": "Ext.ux.desktop.Module",
+        "id": "company-win",
+        "requires": [
+            "ExtDesktop.view.CompanyGrid"
+        ]
+    },
+    "designerId": "120977e5-cca1-43a5-8d17-89d25283688b",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "id",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "implHandler": [
+                    "this.launcher = {",
+                    "    text: 'Companies List',",
+                    "    iconCls:'tabs'",
+                    "};"
+                ]
+            },
+            "designerId": "fef6497a-e61a-422f-ad0e-06dbb427fa1b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "createWindow",
+                "implHandler": [
+                    "var desktop = this.app.getDesktop();",
+                    "var win = desktop.getWindow('company-win');",
+                    "if(!win){",
+                    "    win = desktop.createWindow({",
+                    "        id: 'company-win',",
+                    "        closeAction:'hide',",
+                    "        title:'Companies List',",
+                    "        width:500,",
+                    "        height:400,",
+                    "",
+                    "        layout:{",
+                    "                type:'fit'",
+                    "            },",
+                    "",
+                    "        items:[{",
+                    "            xtype:'companygrid',",
+                    "            flex:1",
+                    "        }]",
+                    "    });",
+                    "}",
+                    "return win;"
+                ]
+            },
+            "designerId": "3278f5c1-88b8-48eb-8628-79418b7f4fa1"
+        }
+    ]
+}
