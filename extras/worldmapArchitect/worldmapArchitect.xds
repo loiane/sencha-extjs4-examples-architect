@@ -1,0 +1,48 @@
+{
+    "name": "worldmapArchitect",
+    "settings": {
+        "cmd": {
+            "license": "gpl",
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "4.2.1.883"
+        },
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "urlPrefix": "http://localhost:88/worldmapArchitect/",
+        "exportPath": "",
+        "buildShouldOverwriteIndex": true,
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "sdkPath": "",
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 1337,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000003,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "f9b6f5b3-426f-46bc-acc3-db77b86b043b",
+            "cc72635c-c04c-417c-99c7-699c96ec0927"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "020238c5-5686-4bfb-888e-e4bdf27e6342",
+            "37c866d4-aae9-4806-8ebb-a805149f7cdb"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

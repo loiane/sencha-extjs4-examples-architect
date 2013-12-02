@@ -1,0 +1,13 @@
+{
+    "type": "Ext.draw.Component",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "worldmap",
+        "designer|userClassName": "WorldMap"
+    },
+    "designerId": "f9b6f5b3-426f-46bc-acc3-db77b86b043b"
+}
