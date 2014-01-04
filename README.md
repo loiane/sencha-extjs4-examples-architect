@@ -16,7 +16,7 @@ Examples already implemented:
 # Tree:
 * Check Tree
 
-# KitcheSink: Jan-2014 (in progress)
+# KitchenSink: Jan-2014 (in progress)
 * Panels - completed
 * Grids - in progress
 * Theme Switcher - in progress
