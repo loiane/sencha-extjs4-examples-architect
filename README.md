@@ -16,6 +16,11 @@ Examples already implemented:
 # Tree:
 * Check Tree
 
+# KitcheSink: Jan-2014 (in progress)
+* Panels - completed
+* Grids - in progress
+* Theme Switcher - in progress
+
 # Desktop: (Nov-25-2013)
 * Web Desktop - simplified
 
